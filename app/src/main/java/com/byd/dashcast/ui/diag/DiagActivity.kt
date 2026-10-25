@@ -384,7 +384,7 @@ class DiagActivity : Activity() {
                 "OEM cluster map client" to "settings get global byd_map_package",
                 "ADB persistence props" to "getprop | grep -iE 'adb|tcp.port'",
                 "Component-state permission" to
-                    "pm default-state com.byd.dashcast/com.byd.dashcast.ui.diag.DiagActivity 2>&1",
+                    "pm default-state ${com.byd.dashcast.proxy.AppIdentity.PACKAGE}/com.byd.dashcast.ui.diag.DiagActivity 2>&1",
                 "Display 0 tasks" to
                     "dumpsys activity activities 2>/dev/null | grep -A 40 'Display #0' | " +
                     "grep -E 'Task\\{|type=|realActivity|topResumed' | head -40",

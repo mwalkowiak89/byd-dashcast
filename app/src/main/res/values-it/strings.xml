@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">DashCast</string>
+    <string name="app_name">Bydlak Dash</string>
     <string name="welcome_subtitle">Controllo quadro strumenti</string>
     <string name="welcome_subtitle_fmt">BYD CLUSTER MIRROR · v%1$s</string>
     <string name="welcome_select_lang">Choisissez votre langue\nPlease select your language</string>
@@ -66,7 +66,7 @@
     <string name="settings_header">Impostazioni</string>
     <string name="settings_cluster_type_title">Tipo cluster</string>
     <string name="ota_dialog_title">Aggiornamento disponibile</string>
-    <string name="ota_up_to_date">DashCast è aggiornato</string>
+    <string name="ota_up_to_date">Bydlak Dash è aggiornato</string>
     <string name="btn_adjust">Regola</string>
     <string name="toast_grid_mode_enabled">Modalità Griglia attivata</string>
     <string name="toast_list_mode_enabled">Modalità Lista attivata</string>
@@ -177,7 +177,7 @@
     <string name="sysinfo_section_full_report">Report completo</string>
     <string name="sysinfo_tile_vehicle">Veicolo</string>
     <string name="sysinfo_tile_android">Android</string>
-    <string name="sysinfo_tile_dashcast">DashCast</string>
+    <string name="sysinfo_tile_dashcast">Bydlak Dash</string>
     <string name="sysinfo_tile_uptime">Uptime</string>
     <string name="sysinfo_tile_uptime_since">Da %1$s</string>
     <string name="sysinfo_disp_main">Principale</string>
@@ -216,20 +216,20 @@
 
     <!-- ═══════════════ DiLink 5 — Dedicated diagnostic (v1.1.0-beta2) ═══════════════ -->
     <!-- v1.2.10 — IME a11y onboarding banner (DL5) -->
-    <string name="a11y_ime_watcher_label">Tastiera auto del cluster (DashCast)</string>
+    <string name="a11y_ime_watcher_label">Tastiera auto del cluster (Bydlak Dash)</string>
     <string name="a11y_ime_watcher_summary">Mostra la tastiera condivisa quando tocchi un campo di testo sul cluster.</string>
-    <string name="a11y_ime_watcher_description">Osserva gli eventi di focus sullo schermo del cluster per aprire automaticamente il ponte tastiera di DashCast. Non legge né memorizza il contenuto dei campi.</string>
+    <string name="a11y_ime_watcher_description">Osserva gli eventi di focus sullo schermo del cluster per aprire automaticamente il ponte tastiera di Bydlak Dash. Non legge né memorizza il contenuto dei campi.</string>
     <string name="ime_banner_title">Tastiera automatica sul cluster</string>
-    <string name="ime_banner_body">Su questo veicolo (DiLink 5) la tastiera di sistema non può apparire sul cluster. Attiva il servizio di accessibilità in modo che DashCast apra automaticamente il ponte tastiera quando tocchi un campo di testo. Altrimenti usa il pulsante ⌨ del mirror.</string>
+    <string name="ime_banner_body">Su questo veicolo (DiLink 5) la tastiera di sistema non può apparire sul cluster. Attiva il servizio di accessibilità in modo che Bydlak Dash apra automaticamente il ponte tastiera quando tocchi un campo di testo. Altrimenti usa il pulsante ⌨ del mirror.</string>
     <string name="ime_banner_btn_enable">Attiva</string>
     <string name="ime_banner_btn_later">Più tardi</string>
     <string name="ime_banner_btn_dismiss">Non mostrare più</string>
     <string name="ime_banner_toast_enabled">Tastiera automatica attiva ✓</string>
     <string name="ime_banner_toast_cannot_open_settings">Impossibile aprire Impostazioni — attiva manualmente il servizio di accessibilità « Tastiera auto del cluster ».</string>
     <string name="hud_notif_banner_title">HUD Navigazione — Accesso alle notifiche richiesto</string>
-    <string name="hud_notif_banner_body">DashCast deve poter leggere le notifiche per mostrare le istruzioni di navigazione sul cluster. Attivalo in Impostazioni → Accesso speciale app → Accesso alle notifiche → DashCast.</string>
+    <string name="hud_notif_banner_body">Bydlak Dash deve poter leggere le notifiche per mostrare le istruzioni di navigazione sul cluster. Attivalo in Impostazioni → Accesso speciale app → Accesso alle notifiche → Bydlak Dash.</string>
     <string name="hud_notif_banner_toast_enabled">Accesso alle notifiche attivato ✓</string>
-    <string name="keyboard_bridge_a11y_required_toast">Attiva « DashCast Cluster IME » in Impostazioni → Accessibilità affinché la tastiera funzioni sul cluster.</string>
+    <string name="keyboard_bridge_a11y_required_toast">Attiva « Bydlak Dash Cluster IME » in Impostazioni → Accessibilità affinché la tastiera funzioni sul cluster.</string>
     <string name="btn_keyboard">⌨</string>
     <string name="btn_keyboard_desc">Tastiera</string>
     <string name="keyboard_bridge_title">Tastiera remota</string>
@@ -238,7 +238,7 @@
 
     <!-- v1.2.28 i18n full: ADAS / Sniffer / Settings warnings -->
     <string name="settings_no_browser_fmt">Nessun browser disponibile per aprire %1$s</string>
-    <string name="keyboard_bridge_active_toast">DashCast Cluster IME ✓</string>
+    <string name="keyboard_bridge_active_toast">Bydlak Dash Cluster IME ✓</string>
     <string name="sysinfo_restart_action">Riavvia</string>
     <string name="sysinfo_restart_started">Riavvio in corso…</string>
     <string name="sysinfo_restart_failed">Riavvio non riuscito</string>
@@ -262,7 +262,7 @@
     <string name="hotspot_back">Indietro</string>
     <string name="hotspot_hero_title">Hotspot 4G tramite TetherFi</string>
     <string name="hotspot_hero_subtitle">Condividi i tuoi dati mobili con pochi tocchi</string>
-    <string name="hotspot_intro">L\'hotspot integrato non è raggiungibile su DiLink 3. DashCast utilizza invece TetherFi (open source), che crea un punto di accesso Wi-Fi Direct + proxy SOCKS5 — nessuna autorizzazione di sistema richiesta, e la SIM del veicolo viene usata come uplink.</string>
+    <string name="hotspot_intro">L\'hotspot integrato non è raggiungibile su DiLink 3. Bydlak Dash utilizza invece TetherFi (open source), che crea un punto di accesso Wi-Fi Direct + proxy SOCKS5 — nessuna autorizzazione di sistema richiesta, e la SIM del veicolo viene usata come uplink.</string>
     <string name="hotspot_tf_status_unknown">⏳ Rilevamento…</string>
     <string name="hotspot_tf_status_installed">🟢 TetherFi installato — versione %1$s</string>
     <string name="hotspot_tf_status_missing">🔴 TetherFi non è installato. Tocca «Installa» per scaricare l\'ultima versione.</string>
@@ -296,12 +296,12 @@
     <string name="settings_use_own_sim_support">Mostra il pulsante «Hotspot» nella barra di navigazione così puoi condividere i tuoi dati mobili tramite TetherFi (solo DiLink 3).</string>
     <string name="proxy_keeper_channel_name">Daemon proxy</string>
     <string name="proxy_keeper_channel_desc">Mantiene il daemon proxy disponibile in background</string>
-    <string name="proxy_keeper_notif_title">DashCast — proxy attivo</string>
+    <string name="proxy_keeper_notif_title">Bydlak Dash — proxy attivo</string>
     <string name="proxy_keeper_notif_text">Daemon controllato ogni 10 s</string>
-    <string name="adb_transport_unresponsive">ADB accetta la connessione ma non risponde ai comandi. Riavvia il debug Android (adbd), quindi riapri DashCast.</string>
-    <string name="adb_transport_key_unauthorized">ADB è raggiungibile, ma la chiave di DashCast non è autorizzata. Accetta «Consenti debug USB» con «Consenti sempre», quindi riapri DashCast.</string>
-    <string name="adb_transport_unreachable">ADB tramite TCP non è raggiungibile su questo veicolo. Attiva il debug Android tramite TCP sulla porta 5555, quindi riapri DashCast.</string>
-    <string name="adb_transport_handshake">L’handshake ADB non è riuscito temporaneamente. DashCast riproverà automaticamente.</string>
+    <string name="adb_transport_unresponsive">ADB accetta la connessione ma non risponde ai comandi. Riavvia il debug Android (adbd), quindi riapri Bydlak Dash.</string>
+    <string name="adb_transport_key_unauthorized">ADB è raggiungibile, ma la chiave di Bydlak Dash non è autorizzata. Accetta «Consenti debug USB» con «Consenti sempre», quindi riapri Bydlak Dash.</string>
+    <string name="adb_transport_unreachable">ADB tramite TCP non è raggiungibile su questo veicolo. Attiva il debug Android tramite TCP sulla porta 5555, quindi riapri Bydlak Dash.</string>
+    <string name="adb_transport_handshake">L’handshake ADB non è riuscito temporaneamente. Bydlak Dash riproverà automaticamente.</string>
     <!-- v1.2.76 — Reboot button + dialog -->
     <string name="sysinfo_btn_reboot">Riavvia</string>
     <string name="sysinfo_reboot_title">Riavviare il tablet?</string>
@@ -338,7 +338,7 @@
     <string name="fission_slot_pkg_none">Nessuna — zona libera</string>
     <string name="fission_slot_zone_bound_fmt">App collegata: %1$s</string>
     <string name="settings_fission_auto_layout">Layout preferito automatico</string>
-    <string name="settings_fission_auto_layout_support">All\'avvio di DashCast: attiva la proiezione del cluster, il layout preferito e avvia le app collegate</string>
+    <string name="settings_fission_auto_layout_support">All\'avvio di Bydlak Dash: attiva la proiezione del cluster, il layout preferito e avvia le app collegate</string>
     <string name="settings_fission_precreate_slots">Pre-crea gli slot all\'avvio</string>
     <string name="settings_fission_precreate_slots_support">Prepara i Virtual Display del layout preferito all\'apertura di Fission (senza avviare le app)</string>
     <string name="sysinfo_disp_hidden">Nascosto (PRIVATE)</string>
@@ -411,7 +411,7 @@
     <string name="bug_status_slow">L\'invio sta richiedendo più tempo del previsto — puoi annullare.</string>
     <string name="bug_status_error_fmt">Errore: %1$s</string>
     <string name="bug_sent_ok">Segnalazione inviata ✓ Grazie!</string>
-    <string name="bug_share_subject">DashCast — Segnalazione bug</string>
+    <string name="bug_share_subject">Bydlak Dash — Segnalazione bug</string>
     <string name="bug_share_chooser">Invia la segnalazione tramite…</string>
 
     <!-- Bug Wizard (keyboard-free, 3-step) -->
@@ -477,7 +477,7 @@
     <string-array name="bug_issues_freeze">
         <item>App crashata</item>
         <item>Schermo bloccato</item>
-        <item>DashCast crashato</item>
+        <item>Bydlak Dash crashato</item>
         <item>Schermo auto nero</item>
         <item>Dovuto riavviare</item>
         <item>Lento dopo stop proiezione</item>
@@ -508,11 +508,11 @@
     <string name="bug_wizard_selected_fmt">Selezionato: %1$s</string>
     <string name="toast_adb_port_refused">ADB irraggiungibile (porta 5555) — mirroring non disponibile su questo dispositivo</string>
     <string name="aaos_cluster_unsupported_title">Proiezione sul quadro bloccata</string>
-    <string name="aaos_cluster_unsupported_msg">Il tuo veicolo usa il sistema Android Automotive di BYD (DX_BYD_AUTO). Su questa unità il quadro strumenti è bloccato dal produttore: BYD lo riserva alla navigazione integrata e blocca la proiezione delle app. È una restrizione del veicolo (non un limite di DashCast) — non esiste alcuna soluzione.</string>
+    <string name="aaos_cluster_unsupported_msg">Il tuo veicolo usa il sistema Android Automotive di BYD (DX_BYD_AUTO). Su questa unità il quadro strumenti è bloccato dal produttore: BYD lo riserva alla navigazione integrata e blocca la proiezione delle app. È una restrizione del veicolo (non un limite di Bydlak Dash) — non esiste alcuna soluzione.</string>
     <string name="dl3_singleos_cluster_unsupported_title">Proiezione sul quadro non disponibile</string>
-    <string name="dl3_singleos_cluster_unsupported_msg">Su questo veicolo il quadro strumenti usa una configurazione a schermo singolo (single-OS): è disegnato direttamente dall\'auto, senza uno schermo separato su cui proiettare le app. La proiezione delle app sul quadro non è possibile qui — è una caratteristica del quadro del tuo veicolo, non un limite di DashCast.</string>
+    <string name="dl3_singleos_cluster_unsupported_msg">Su questo veicolo il quadro strumenti usa una configurazione a schermo singolo (single-OS): è disegnato direttamente dall\'auto, senza uno schermo separato su cui proiettare le app. La proiezione delle app sul quadro non è possibile qui — è una caratteristica del quadro del tuo veicolo, non un limite di Bydlak Dash.</string>
     <string name="dl4_cluster_unsupported_title">Proiezione sul quadro bloccata dal firmware</string>
-    <string name="dl4_cluster_unsupported_msg">Su questo veicolo il firmware non consente a DashCast di vedere lo schermo del quadro strumenti: l\'app non è nell\'elenco dei programmi autorizzati dal costruttore a enumerare gli schermi. DashCast ha interrogato anche il proprio assistente privilegiato, che non ha trovato alcuno schermo del quadro. La proiezione di app sul quadro non è quindi possibile con questa versione del firmware — è una restrizione del costruttore, non un limite di DashCast.</string>
+    <string name="dl4_cluster_unsupported_msg">Su questo veicolo il firmware non consente a Bydlak Dash di vedere lo schermo del quadro strumenti: l\'app non è nell\'elenco dei programmi autorizzati dal costruttore a enumerare gli schermi. Bydlak Dash ha interrogato anche il proprio assistente privilegiato, che non ha trovato alcuno schermo del quadro. La proiezione di app sul quadro non è quindi possibile con questa versione del firmware — è una restrizione del costruttore, non un limite di Bydlak Dash.</string>
     <!-- HUD diagnostic bug-report — tester-facing result choices (13 locales) -->
     <string name="hud_bench_result_title">Risultato — cosa hai visto, e DOVE (cluster o parabrezza)?</string>
     <string name="hud_bench_opt_cluster">✅ Freccia sul CLUSTER (dietro il volante)</string>
@@ -549,36 +549,36 @@
     <string name="bug_hud_gate_yes">✅ Sì, mostra le frecce</string>
     <string name="bug_hud_gate_no">❌ No, mai</string>
     <string name="bug_hud_gate_unknown">❓ Non lo so</string>
-    <string name="bug_hud_no_arrows_msg">Allora il firmware del tuo HUD non può proprio mostrare le frecce di svolta, e nemmeno DashCast può aggiungerle. Non c\'è nulla che possiamo correggere, quindi non serve inviare questa segnalazione. Grazie comunque!</string>
+    <string name="bug_hud_no_arrows_msg">Allora il firmware del tuo HUD non può proprio mostrare le frecce di svolta, e nemmeno Bydlak Dash può aggiungerle. Non c\'è nulla che possiamo correggere, quindi non serve inviare questa segnalazione. Grazie comunque!</string>
     <!-- HUD gate 2 — which nav app the user relies on (v1.6.140) -->
     <string name="bug_hud_nav_title">Quale app usi per la navigazione?</string>
     <string name="bug_hud_nav_oem">La navigazione originale della mia auto</string>
-    <string name="bug_hud_nav_unsupported_msg">DashCast può riflettere le frecce sull\'HUD solo da Google Maps o Waze. La navigazione originale della tua auto (Telenav…) trasmette i suoi dati in un formato che DashCast non riesce a leggere — ma mostra già le sue frecce sull\'HUD. Per avere le frecce tramite DashCast, avvia una navigazione con Google Maps o Waze.</string>
+    <string name="bug_hud_nav_unsupported_msg">Bydlak Dash può riflettere le frecce sull\'HUD solo da Google Maps o Waze. La navigazione originale della tua auto (Telenav…) trasmette i suoi dati in un formato che Bydlak Dash non riesce a leggere — ma mostra già le sue frecce sull\'HUD. Per avere le frecce tramite Bydlak Dash, avvia una navigazione con Google Maps o Waze.</string>
     <string name="bug_hud_nav_understood">Capito, userò Maps o Waze</string>
     <string name="bug_hud_nav_report_anyway">Invia comunque la segnalazione</string>
     <!-- HUD gate 3 — no route running (v1.6.143) -->
-    <string name="bug_hud_no_route_msg">Non c\'è nessun percorso in corso. DashCast riceve le indicazioni solo mentre la navigazione è attiva: aprire Google Maps o Waze non basta. Avvia un percorso verso una destinazione, poi guarda l\'HUD — la freccia dovrebbe comparire.</string>
+    <string name="bug_hud_no_route_msg">Non c\'è nessun percorso in corso. Bydlak Dash riceve le indicazioni solo mentre la navigazione è attiva: aprire Google Maps o Waze non basta. Avvia un percorso verso una destinazione, poi guarda l\'HUD — la freccia dovrebbe comparire.</string>
     <string name="bug_hud_no_route_understood">Capito, avvio un percorso</string>
-    <string name="bug_hud_no_notif_access_msg">DashCast non ha accesso alle notifiche. È indispensabile: le indicazioni di svolta vengono lette dalla notifica di Google Maps o Waze. Vai in Impostazioni Android → Notifiche → Accesso alle notifiche e autorizza DashCast, poi avvia di nuovo un itinerario.</string>
+    <string name="bug_hud_no_notif_access_msg">Bydlak Dash non ha accesso alle notifiche. È indispensabile: le indicazioni di svolta vengono lette dalla notifica di Google Maps o Waze. Vai in Impostazioni Android → Notifiche → Accesso alle notifiche e autorizza Bydlak Dash, poi avvia di nuovo un itinerario.</string>
     <string name="hud_sweep_result_title">Scansione completata — cosa hai visto sul CLUSTER?</string>
     <string name="hud_sweep_opt_photographed">📷 Ho fotografato le icone</string>
     <string name="hud_sweep_opt_nothing">❌ Non è apparso niente sul cluster</string>
     <!-- Bug report delivery — pairing. -->
     <string name="pairing_row_title">Invio delle segnalazioni</string>
-    <string name="pairing_state_on">Attivo — le tue segnalazioni arrivano al team DashCast</string>
+    <string name="pairing_state_on">Attivo — le tue segnalazioni arrivano al team Bydlak Dash</string>
     <string name="pairing_state_off">Disattivato — le tue segnalazioni restano su questo dispositivo</string>
     <!-- Consent to send diagnostics. Shown the first time the user taps Send on a report,
          and re-readable from Settings. The body lists what a report actually contains: it was
          written from a verified inventory of the collection code, not from memory. If what the
          app collects changes, the list changes AND ReportConsent.NOTICE_VERSION goes up. -->
     <string name="pairing_state_on_no_channel">Accettato, ma su questo dispositivo non è configurato alcun canale</string>
-    <string name="consent_title">Inviare i dati diagnostici al team DashCast?</string>
-    <string name="consent_body">Per risolvere un problema, il team DashCast ha bisogno di sapere cosa stava succedendo nell\'auto in quel momento.\n\nPrima dell\'invio, DashCast rimuove automaticamente da ogni segnalazione il numero di telaio (VIN), i nomi delle reti Wi-Fi, gli indirizzi fisici dei dispositivi e le posizioni.\n\nCosa resta:\n\n•  il registro di DashCast e quello del sistema Android, copiati così come sono: contengono ciò che hanno scritto le altre app, e non possiamo sapere in anticipo di cosa si tratti;\n\n•  informazioni sull\'auto e sull\'unità centrale: modello, versione, impostazioni, app installate;\n\n•  l\'indirizzo IP locale dell\'auto;\n\n•  quello che scrivi nel modulo e il nome utente Telegram che indichi;\n\n•  le schermate, attive per impostazione predefinita: immagini non sfocate dello schermo centrale e del quadro strumenti, che possono mostrare una mappa con la tua destinazione — un\'immagine non si può filtrare come il testo. Ti verranno richieste a ogni invio.\n\nNessuna segnalazione esce dall\'auto finché non tocchi «Invia». Le segnalazioni sono lette dal team DashCast in un gruppo privato. DashCast non invia alcuna registrazione audio, foto, contatto o messaggio.\n\nSe rifiuti, la segnalazione resta su questo dispositivo e puoi condividerla tu. Puoi cambiare idea in qualsiasi momento nelle Impostazioni.</string>
+    <string name="consent_title">Inviare i dati diagnostici al team Bydlak Dash?</string>
+    <string name="consent_body">Per risolvere un problema, il team Bydlak Dash ha bisogno di sapere cosa stava succedendo nell\'auto in quel momento.\n\nPrima dell\'invio, Bydlak Dash rimuove automaticamente da ogni segnalazione il numero di telaio (VIN), i nomi delle reti Wi-Fi, gli indirizzi fisici dei dispositivi e le posizioni.\n\nCosa resta:\n\n•  il registro di Bydlak Dash e quello del sistema Android, copiati così come sono: contengono ciò che hanno scritto le altre app, e non possiamo sapere in anticipo di cosa si tratti;\n\n•  informazioni sull\'auto e sull\'unità centrale: modello, versione, impostazioni, app installate;\n\n•  l\'indirizzo IP locale dell\'auto;\n\n•  quello che scrivi nel modulo e il nome utente Telegram che indichi;\n\n•  le schermate, attive per impostazione predefinita: immagini non sfocate dello schermo centrale e del quadro strumenti, che possono mostrare una mappa con la tua destinazione — un\'immagine non si può filtrare come il testo. Ti verranno richieste a ogni invio.\n\nNessuna segnalazione esce dall\'auto finché non tocchi «Invia». Le segnalazioni sono lette dal team Bydlak Dash in un gruppo privato. Bydlak Dash non invia alcuna registrazione audio, foto, contatto o messaggio.\n\nSe rifiuti, la segnalazione resta su questo dispositivo e puoi condividerla tu. Puoi cambiare idea in qualsiasi momento nelle Impostazioni.</string>
     <string name="consent_accept">Accetta</string>
     <string name="consent_refuse">Rifiuta</string>
     <string name="consent_revoke">Revoca</string>
     <string name="consent_close">Chiudi</string>
-    <string name="consent_result_granted">Grazie. Le tue segnalazioni arriveranno al team DashCast.</string>
+    <string name="consent_result_granted">Grazie. Le tue segnalazioni arriveranno al team Bydlak Dash.</string>
     <string name="consent_result_refused">Rifiutato. Le tue segnalazioni resteranno su questo dispositivo.</string>
     <string name="consent_result_revoked">Revocato. Le tue segnalazioni resteranno su questo dispositivo.</string>
     <string name="bug_kept_locally_fmt">Segnalazione salvata su questo dispositivo: %1$s. Scegli come inviarla.</string>

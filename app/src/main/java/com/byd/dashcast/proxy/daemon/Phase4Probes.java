@@ -203,7 +203,7 @@ public final class Phase4Probes {
         File[] dirs = new File("/proc").listFiles();
         if (dirs == null) return "FAIL_OTHER:/proc not readable";
         int scanned = 0, matched = 0;
-        String needle = "com.byd.dashcast";
+        String needle = com.byd.dashcast.proxy.AppIdentity.PACKAGE;
         byte[] buf = new byte[256];
         for (File d : dirs) {
             String name = d.getName();
@@ -265,7 +265,7 @@ public final class Phase4Probes {
         } catch (NoSuchMethodException nse) {
             return "FAIL_API:getInstallerPackageName absent";
         }
-        Object res = m.invoke(pm, "com.byd.dashcast");
+        Object res = m.invoke(pm, com.byd.dashcast.proxy.AppIdentity.PACKAGE);
         return "PASS:installer=" + (res == null ? "<null>" : String.valueOf(res));
     }
 

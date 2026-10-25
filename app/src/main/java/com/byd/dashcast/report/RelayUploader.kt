@@ -48,7 +48,9 @@ object RelayUploader {
      * of the bot beyond posting into the group it already posts into. The release secret-scan
      * workflow looks for token shapes, and a bare HTTPS URL is not one.
      */
-    const val DEFAULT_URL = "https://func-dc-relay-bf8097.azurewebsites.net/api/report"
+    // Bydlak Dash: empty until our own relay (relay/) is deployed; upstream's endpoint posts to
+    // upstream's Telegram group, which is not where this fork's reports belong.
+    const val DEFAULT_URL = ""
 
     /** Topic names the relay understands. The thread ids themselves live server-side now. */
     const val TOPIC_BUG = "bug"

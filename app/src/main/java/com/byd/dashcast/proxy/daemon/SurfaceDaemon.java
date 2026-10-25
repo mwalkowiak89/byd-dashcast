@@ -166,7 +166,7 @@ public class SurfaceDaemon {
          *  {@code SurfaceDaemonReusePolicy.shouldReuse} return false forever, so the daemon would
          *  be killed and respawned on every app launch. */
         public static final String VERSION_FILE =
-            "/data/local/tmp/dashcast_mirrordaemon_ver";
+            com.byd.dashcast.proxy.AppIdentity.tmp("_mirrordaemon_ver");
 
     // Mirror state (shared between threads via Binder thread pool)
     private static volatile IBinder sMirrorToken     = null;
@@ -277,7 +277,7 @@ public class SurfaceDaemon {
             // WIRE IDENTIFIER — do NOT rename with the class: AdbLocalClient.DAEMON_GREP matches
             // this exact runtime process name when deciding to reuse or kill the daemon.
             android.os.Process.class.getMethod("setArgV0", String.class)
-                    .invoke(null, "com.byd.dashcast.mirrordaemon");
+                    .invoke(null, com.byd.dashcast.proxy.AppIdentity.MIRROR_PROCESS);
             out("setArgV0 OK");
         } catch (Exception ignored) {
             out("setArgV0 ignored: " + ignored.getMessage());
@@ -353,14 +353,14 @@ public class SurfaceDaemon {
                     Method addSvc = smClass.getDeclaredMethod("addService",
                             String.class, IBinder.class, boolean.class, int.class);
                     addSvc.setAccessible(true);
-                    addSvc.invoke(null, "byd_mirror_daemon", daemonBinder, false, 0);
+                    addSvc.invoke(null, com.byd.dashcast.proxy.AppIdentity.MIRROR_SERVICE, daemonBinder, false, 0);
                     out("ServiceManager.addService (4-arg) OK");
                 } catch (NoSuchMethodException e2) {
                     // Fallback : addService(String, IBinder)
                     Method addSvc = smClass.getDeclaredMethod("addService",
                             String.class, IBinder.class);
                     addSvc.setAccessible(true);
-                    addSvc.invoke(null, "byd_mirror_daemon", daemonBinder);
+                    addSvc.invoke(null, com.byd.dashcast.proxy.AppIdentity.MIRROR_SERVICE, daemonBinder);
                     out("ServiceManager.addService (2-arg) OK");
                 }
             } catch (Exception eSm) {
@@ -943,7 +943,7 @@ public class SurfaceDaemon {
     // works for ROMs where receiverPermission filtering misbehaves.
     // WIRE IDENTIFIER — must match AndroidManifest.xml's <permission>/<uses-permission>; do NOT
     // rename with the class.
-    public static final String PERM_DAEMON_READY = "com.byd.dashcast.permission.DAEMON_READY";
+    public static final String PERM_DAEMON_READY = com.byd.dashcast.proxy.AppIdentity.PERMISSION_DAEMON_READY;
 
     private static void broadcastBinder(Context context, IBinder binder) {
         Bundle extras = new Bundle();

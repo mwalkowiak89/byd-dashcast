@@ -47,22 +47,22 @@ public final class ProxyClient {
     private static final String TAG = "ProxyClient";
 
     /** App package whose APK hosts the daemon main class. Must match the installed package. */
-    private static final String DAEMON_PKG = "com.byd.dashcast";
+    private static final String DAEMON_PKG = AppIdentity.PACKAGE;
 
     /** Fully-qualified main class of the daemon. */
     private static final String DAEMON_MAIN = "com.byd.dashcast.proxy.daemon.ProxyDaemonMain";
 
     /** Path of the daemon's stdout/stderr capture on the device (overwritten each bootstrap). */
-    private static final String DAEMON_LOG = "/data/local/tmp/dashcast_proxy.log";
+    private static final String DAEMON_LOG = AppIdentity.tmp("_proxy.log");
 
     /** PID file written by the daemon at startup (v1.2.63-beta, Phase A step 3). */
-    private static final String DAEMON_PID = "/data/local/tmp/dashcast_proxy.pid";
+    private static final String DAEMON_PID = AppIdentity.tmp("_proxy.pid");
     /** Per-process nonce paired with {@link #DAEMON_PID}; protocol v25 WHOAMI returns it. */
-    private static final String DAEMON_INSTANCE = "/data/local/tmp/dashcast_proxy_instance";
+    private static final String DAEMON_INSTANCE = AppIdentity.tmp("_proxy_instance");
     /** Trigger file watched by the daemon to ask for a binder rebroadcast. */
-    private static final String DAEMON_TRIGGER = "/data/local/tmp/dashcast_proxy.trigger";
+    private static final String DAEMON_TRIGGER = AppIdentity.tmp("_proxy.trigger");
     /** Bootstrap-script lock file — flock'd to serialize concurrent bootstraps. */
-    private static final String DAEMON_LOCK = "/data/local/tmp/dashcast_proxy.lock";
+    private static final String DAEMON_LOCK = AppIdentity.tmp("_proxy.lock");
 
     /**
      * Bootstrap script run via local ADB. Mirrors the proven {@code SurfaceDaemon}
@@ -108,7 +108,7 @@ public final class ProxyClient {
             // Concurrent touches on the trigger file coalesce inside the
             // FileObserver, so no locking is needed for the fast path.
             "TRIG=" + DAEMON_TRIGGER + "; "
-            + "PS_OUT=$(ps -A 2>/dev/null | grep '[d]ashcast_proxy'); "
+            + "PS_OUT=$(ps -A 2>/dev/null | grep '" + AppIdentity.selfExcludingGrep(AppIdentity.PROXY_PROCESS) + "'); "
             + "ALIVE_PID=$(echo \"$PS_OUT\" | awk '{print $2}' | head -n1); "
             // AUD — the process NAME is not an identity. `ps -A | grep dashcast_proxy` matches
             // any process whose name merely contains that string, and any app can obtain one by
@@ -120,7 +120,7 @@ public final class ProxyClient {
             //
             // The pid file is the identity, because only uid 2000 can write /data/local/tmp.
             // A name match that does not agree with it is not our daemon.
-            + "PID_FILE_VAL=$(cat /data/local/tmp/dashcast_proxy.pid 2>/dev/null); "
+            + "PID_FILE_VAL=$(cat " + DAEMON_PID + " 2>/dev/null); "
             + "if [ -n \"$ALIVE_PID\" ] && [ \"$ALIVE_PID\" != \"$PID_FILE_VAL\" ]; then "
             +   "echo \"[diag] proxy name-match pid=$ALIVE_PID != pidfile=${PID_FILE_VAL:-none} — ignoring\" >&2; "
             +   "ALIVE_PID=; "
@@ -129,7 +129,7 @@ public final class ProxyClient {
             // Version check: daemon loaded from old APK after OTA has a stale
             // versionCode in VERSION_FILE — fall through to kill+restart instead
             // of REBROADCAST, so proxy verbs are always from the current APK.
-            +   "DAEMON_VER=$(cat /data/local/tmp/dashcast_proxy_ver 2>/dev/null); "
+            +   "DAEMON_VER=$(cat " + AppIdentity.tmp("_proxy_ver") + " 2>/dev/null); "
             +   "if [ \"$DAEMON_VER\" = \"" + com.byd.dashcast.BuildConfig.VERSION_CODE + "\" ]; then "
             +     "echo trigger > \"$TRIG\" 2>/dev/null; "
             +     "echo \"REBROADCAST $ALIVE_PID\"; exit 0; "
@@ -165,7 +165,7 @@ public final class ProxyClient {
             // live daemon we'd never reach here; if it didn't but `ps` here
             // still finds one, the daemon died between the two `ps` calls —
             // then this kill is harmless (already-gone PID).
-            + "STALE=$(ps -A 2>/dev/null | grep '[d]ashcast_proxy' | awk '{print $2}'); "
+            + "STALE=$(ps -A 2>/dev/null | grep '" + AppIdentity.selfExcludingGrep(AppIdentity.PROXY_PROCESS) + "' | awk '{print $2}'); "
             + "if [ -n \"$STALE\" ]; then kill -9 $STALE 2>/dev/null; sleep 0.3; fi; "
             // Self-diagnostic header so a failed bootstrap is debuggable from the log.
             + "{ echo \"[boot] $(date) apk=$APK\"; "
@@ -176,7 +176,7 @@ public final class ProxyClient {
             +   "echo \"[boot] exec app_process64...\"; } > \"$LOG\" 2>&1; "
             + "setsid sh -c \"CLASSPATH='$APK' exec /system/bin/app_process64"
             +     " -Xnoimage-dex2oat /system/bin"
-            +     " --nice-name=dashcast_proxy"
+            +     " --nice-name=" + AppIdentity.PROXY_PROCESS
             +     " " + DAEMON_MAIN
             +     " </dev/null >>'$LOG' 2>&1\" & "
             + "echo OK $APK";
@@ -1270,7 +1270,7 @@ public final class ProxyClient {
                 try {
                     // Use the existing EXEC transport to kill ourselves —
                     // simplest and avoids new shell perms on the caller side.
-                    runShell("ps -A 2>/dev/null | grep '[d]ashcast_proxy' "
+                    runShell("ps -A 2>/dev/null | grep '" + AppIdentity.selfExcludingGrep(AppIdentity.PROXY_PROCESS) + "' "
                             + "| awk '{print $2}' | xargs -r kill -9");
                 } catch (Throwable ignore) { /* daemon may already be dead */ }
             }

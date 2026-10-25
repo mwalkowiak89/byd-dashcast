@@ -1032,7 +1032,7 @@ class SysInfoActivity : AppCompatActivity() {
             // NOTE: pidOf() interpolates the pattern into `sh -c`, so it must stay free of shell
             // metacharacters — hence one literal token, not the DAEMON_GREP alternation.
             Thread({
-                val pid = pidOf("com.byd.dashcast.mirrordaemon")
+                val pid = pidOf(com.byd.dashcast.proxy.AppIdentity.MIRROR_PROCESS)
                 runOnUiThread {
                     if (mDestroyed) return@runOnUiThread
                     val sub = if (pid > 0) "pid $pid · poll 500 ms" else getString(R.string.sysinfo_svc_mirror_sub)
@@ -1070,7 +1070,7 @@ class SysInfoActivity : AppCompatActivity() {
             })
         if (proxyConnected) {
             Thread({
-                val pid = pidOf("dashcast_proxy")
+                val pid = pidOf(com.byd.dashcast.proxy.AppIdentity.PROXY_PROCESS)
                 val spawns = ProxyMetrics.get(this, ProxyMetrics.K_COLD_SPAWNS)
                 val zombies = ProxyMetrics.get(this, ProxyMetrics.K_BINDER_ZOMBIES)
                 runOnUiThread {

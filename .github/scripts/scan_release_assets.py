@@ -47,7 +47,7 @@ SCAN_CHUNK_BYTES = 64 * 1024
 SCAN_OVERLAP_BYTES = max(PATTERN_MIN_BYTES.values()) - 1
 SUPPORTED_COMPRESSION_METHODS = {zipfile.ZIP_STORED, zipfile.ZIP_DEFLATED}
 
-EXPECTED_PACKAGE = "com.byd.dashcast"
+EXPECTED_PACKAGE = "pl.mwalkowiak.bydlakdash"
 EXPECTED_CERT_SHA256 = "c8a2e9bccf597c2fb6dc66bee293fc13f2fc47ec77bc6b2b0d52c11f51192ab8"
 
 EOCD_SIGNATURE = b"PK\x05\x06"
@@ -392,9 +392,9 @@ def verify_release_contract(
         return [f"{single_line(apk.name)} :: {size_finding}"]
     version = (tag or "").removeprefix("v")
     if not version:
-        match = re.fullmatch(r"DashCast-v(.+)-release\.apk", apk.name)
+        match = re.fullmatch(r"BydlakDash-v(.+)-release\.apk", apk.name)
         version = match.group(1) if match else ""
-    expected_name = f"DashCast-v{version}-release.apk" if version else ""
+    expected_name = f"BydlakDash-v{version}-release.apk" if version else ""
     findings: list[str] = []
     if not expected_name or apk.name != expected_name:
         findings.append(f"{single_line(apk.name)} :: unexpected release asset name")

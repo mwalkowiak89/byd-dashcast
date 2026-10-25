@@ -35,7 +35,7 @@ class SurfaceDaemonStartCommandTest {
             "/data/local/tmp/mirrordaemon_latest.log"
         )
 
-        assertTrue(command.contains("--nice-name=byd.mirror.daemon"))
+        assertTrue(command.contains("--nice-name=" + com.byd.dashcast.proxy.AppIdentity.MIRROR_SPAWN_NAME))
         // The class NAME, not a copy of it. This assertion used to compare one string literal to
         // an identical string literal, so it could only ever pass: rename or move SurfaceDaemon
         // and the daemon becomes unstartable — app_process resolves the entry point by name — while

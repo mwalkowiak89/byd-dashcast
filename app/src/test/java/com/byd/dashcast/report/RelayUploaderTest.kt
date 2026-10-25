@@ -5,6 +5,7 @@ import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
+import org.junit.Assume.assumeTrue
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -75,6 +76,7 @@ class RelayUploaderTest {
 
     @Test
     fun `an explicitly blank device endpoint is not a relay`() {
+        assumeTrue("no built-in relay until this fork deploys its own", RelayUploader.DEFAULT_URL.isNotEmpty())
         // A provisioning file that carries an empty relay.url must not read as "relay available"
         // and shadow the built-in one into silence.
         ReportConsent.grant(ctx)
@@ -108,6 +110,7 @@ class RelayUploaderTest {
         // of value that is safe to ship: a plain HTTPS address, never a query string, which is
         // where a function key would end up if someone ever added one.
         val u = RelayUploader.DEFAULT_URL
+        if (u.isEmpty()) return  // not deployed yet: shipping nothing is safe too
         assertTrue("built-in endpoint must be https", u.startsWith("https://"))
         assertFalse("a credential must never ride in the URL", u.contains("?"))
         assertFalse(u.contains("code="))
@@ -115,6 +118,7 @@ class RelayUploaderTest {
 
     @Test
     fun `consent still gates the built-in endpoint`() {
+        assumeTrue("no built-in relay until this fork deploys its own", RelayUploader.DEFAULT_URL.isNotEmpty())
         // The endpoint being compiled in must not make the app configured on its own: a device
         // that has not answered the notice sends nothing, relay or no relay.
         assertFalse(RelayUploader.isConfigured())

@@ -101,19 +101,19 @@ public final class ProxyDaemonMain {
     private static final String PROTOCOL_VERSION = "25";
 
     /** Process name shown in {@code ps} after the JVM's {@code setArgV0} runs. */
-    private static final String PROC_NAME = "dashcast_proxy";
+    private static final String PROC_NAME = com.byd.dashcast.proxy.AppIdentity.PROXY_PROCESS;
 
     /** PID file written at startup, removed at shutdown via the JVM hook.
      *  Used by the bootstrap script's fast path to detect a surviving daemon
      *  after app restart (setsid'd daemon outlives the app process) and ask
      *  for a binder rebroadcast instead of paying the ~1 s app_process cost. */
-    private static final String PID_FILE = "/data/local/tmp/dashcast_proxy.pid";
+    private static final String PID_FILE = com.byd.dashcast.proxy.AppIdentity.tmp("_proxy.pid");
         private static final String STARTUP_LOCK_FILE =
-            "/data/local/tmp/dashcast_proxy_startup.lock";
+            com.byd.dashcast.proxy.AppIdentity.tmp("_proxy_startup.lock");
         private static ProxyDaemonStartupLock sStartupLock;
 
         /** Random identity for this exact daemon process, paired with the PID for safe recovery. */
-        private static final String INSTANCE_FILE = "/data/local/tmp/dashcast_proxy_instance";
+        private static final String INSTANCE_FILE = com.byd.dashcast.proxy.AppIdentity.tmp("_proxy_instance");
         private static final String INSTANCE_TOKEN =
             java.util.UUID.randomUUID().toString().replace("-", "");
 
@@ -121,15 +121,15 @@ public final class ProxyDaemonMain {
      *  The bootstrap script (running as uid 2000 shell) touches this file to
      *  ask the daemon to re-emit {@link #ACTION_PROXY_CONNECTED} so a freshly
      *  restarted app gets the binder without restarting the daemon. */
-    private static final String TRIGGER_FILE = "/data/local/tmp/dashcast_proxy.trigger";
+    private static final String TRIGGER_FILE = com.byd.dashcast.proxy.AppIdentity.tmp("_proxy.trigger");
 
     /** APK versionCode written at startup so the bootstrap script can detect a
      *  stale daemon that survived an OTA update (REBROADCAST would otherwise
      *  reconnect to the old, class-loaded binary). Deleted by shutdown hook. */
-    private static final String VERSION_FILE = "/data/local/tmp/dashcast_proxy_ver";
+    private static final String VERSION_FILE = com.byd.dashcast.proxy.AppIdentity.tmp("_proxy_ver");
 
     /** App package that receives the {@link ProxyDaemonContract#ACTION_PROXY_CONNECTED} broadcast. */
-    private static final String TARGET_PKG = "com.byd.dashcast";
+    private static final String TARGET_PKG = com.byd.dashcast.proxy.AppIdentity.PACKAGE;
 
     /** Set in {@link #main(String[])} once the system context is acquired, so
      *  {@link ProxyBinder} can hand it to {@link Phase4Probes} without re-acquiring. */
@@ -155,7 +155,7 @@ public final class ProxyDaemonMain {
     /** ServiceManager name under which the proxy binder is (best-effort) registered so the app can
      *  authenticate the PROXY_CONNECTED broadcast binder against it — only uid-2000/system can
      *  addService (SELinux blocks untrusted apps). Public so ProxyClient can cross-check. */
-    public static final String SERVICE_NAME = "byd_proxy_daemon";
+    public static final String SERVICE_NAME = com.byd.dashcast.proxy.AppIdentity.PROXY_SERVICE;
 
     /** Our app's uid. Resolution is retried from the Binder gate after transient PM failures. */
     private static volatile int sAppUid = -1;
@@ -452,7 +452,7 @@ public final class ProxyDaemonMain {
         }
     }
 
-    /** True iff {@code /proc/PID/cmdline} exists and contains "dashcast_proxy". */
+    /** True iff {@code /proc/PID/cmdline} exists and contains {@link #PROC_NAME}. */
     private static boolean isLiveDaemon(int pid) {
         try {
             File cmdline = new File("/proc/" + pid + "/cmdline");
@@ -1446,6 +1446,6 @@ public final class ProxyDaemonMain {
      *  a bug report ({@code --- PROXYDAEMON LOG ---}) that survives a logcat flood, unlike
      *  {@code android.util.Log}. */
     static void log(String s) {
-        System.out.println("[dashcast_proxy] " + s);
+        System.out.println("[" + PROC_NAME + "] " + s);
     }
 }

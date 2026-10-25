@@ -93,7 +93,7 @@ public final class PermissionBannerCoordinator {
     private void enableImeA11yOneClick(final View btnEnable) {
         if (btnEnable != null) btnEnable.setEnabled(false);
         try {
-            final String comp = "com.byd.dashcast/com.byd.dashcast.ime.ClusterImeWatcherService";
+            final String comp = com.byd.dashcast.proxy.AppIdentity.PACKAGE + "/com.byd.dashcast.ime.ClusterImeWatcherService";
             final String cmd =
                     "COMP='" + comp + "'; "
                   + "CURRENT=$(settings get secure enabled_accessibility_services 2>/dev/null); "
@@ -220,7 +220,7 @@ public final class PermissionBannerCoordinator {
     private void enableHudNotifOneClick(final View btnEnable) {
         if (btnEnable != null) btnEnable.setEnabled(false);
         try {
-            final String comp = "com.byd.dashcast/com.byd.dashcast.hud.MapNotificationListenerService";
+            final String comp = com.byd.dashcast.proxy.AppIdentity.PACKAGE + "/com.byd.dashcast.hud.MapNotificationListenerService";
             final String cmd  = "cmd notification allow_listener " + comp;
 
             ShellGateway.execShellWithResult(mHost.getContext(), cmd, new AdbLocalClient.Callback() {

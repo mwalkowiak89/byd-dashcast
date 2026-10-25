@@ -8,6 +8,7 @@ import android.os.SystemClock;
 
 import com.byd.dashcast.cluster.display.ClusterGeometryPolicy;
 import com.byd.dashcast.data.prefs.ClusterPrefs;
+import com.byd.dashcast.proxy.AppIdentity;
 import com.byd.dashcast.proxy.DaemonConfig;
 import com.byd.dashcast.proxy.DaemonBinderResolver;
 import com.byd.dashcast.proxy.ProxyClient;
@@ -352,7 +353,8 @@ public class AdbLocalClient {
     // Grep pattern uses the [m] trick to prevent grep from matching its own cmdline.
         // Character-class tricks match both runtime names without matching grep's own cmdline.
         private static final String DAEMON_GREP =
-            "grep -E '[m]irrordaemon|[b]yd[.]mirror[.]daemon'";
+            "grep -E '" + AppIdentity.selfExcludingGrep(AppIdentity.MIRROR_PROCESS)
+                    + "|" + AppIdentity.selfExcludingGrep(AppIdentity.MIRROR_SPAWN_NAME) + "'";
 
     /**
      * Keeps only lines owned by uid 2000, because a process NAME is not an identity.
@@ -439,13 +441,13 @@ public class AdbLocalClient {
                     // them — /data/local/tmp accumulated hundreds over weeks
                     // (user report, June 2026). The glob targets mirrordaemon_2*
                     // so the mirrordaemon_latest.log symlink is never matched.
-                    dadb.shell("ls -t /data/local/tmp/mirrordaemon_2*.log 2>/dev/null"
+                    dadb.shell("ls -t " + AppIdentity.tmp("_mirrordaemon_2") + "*.log 2>/dev/null"
                             + " | tail -n +6 | xargs -r rm -f");
                     // Java timestamp → unique filename per launch
                     String ts = new java.text.SimpleDateFormat("yyyyMMdd_HHmmss", java.util.Locale.US)
                             .format(new java.util.Date());
-                    final String logPath = "/data/local/tmp/mirrordaemon_" + ts + ".log";
-                    final String latestLink = "/data/local/tmp/mirrordaemon_latest.log";
+                    final String logPath = AppIdentity.tmp("_mirrordaemon_" + ts + ".log");
+                    final String latestLink = AppIdentity.tmp("_mirrordaemon_latest.log");
                     // setsid: detaches the process from the ADB session group
                     // → survives dadb connection close (otherwise SIGHUP possible)
                     // CLASSPATH inline (no export &&) as Commander APK does it

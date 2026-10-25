@@ -50,7 +50,7 @@ object DaemonBinderResolver {
 
     /** WIRE IDENTIFIER — the ServiceManager name the daemon registers under. Must stay byte-equal
      *  to the literal in `SurfaceDaemon.main()`; a daemon spawned by an older APK already used it. */
-    private const val SERVICE_KEY = "byd_mirror_daemon"
+    private const val SERVICE_KEY = AppIdentity.MIRROR_SERVICE
 
     fun interface Callback {
         fun onFound(binder: IBinder)

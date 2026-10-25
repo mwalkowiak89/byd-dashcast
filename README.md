@@ -1,3 +1,17 @@
+# Bydlak Dash
+
+**Bydlak Dash** is a fork of [DashCast](https://github.com/Kiroha/byd-dashcast) by Kiroha (MIT licence,
+see [LICENSE](LICENSE)). It installs as its own app (`pl.mwalkowiak.bydlakdash`) next to upstream DashCast,
+takes OTA updates from [mwalkowiak89/byd-dashcast](https://github.com/mwalkowiak89/byd-dashcast/releases),
+and adds a custom gauge editor (see [docs/specs/gauges-editor.md](docs/specs/gauges-editor.md)).
+Device-global names (package, daemon processes, ServiceManager entries, `/data/local/tmp` files) come from
+`app/build.gradle` via `com.byd.dashcast.proxy.AppIdentity`. Bug reports stay off until this fork's own
+relay (`relay/`) is deployed and its URL is set in `RelayUploader.DEFAULT_URL`.
+
+The upstream README follows.
+
+---
+
 > **About the author** — I am not a professional developer, but I work in IT with a solid understanding of software development. This project was built through **vibe coding** with AI assistance (**Claude Sonnet 4.6** and **Gemini Pro**), which allowed me to ship this app despite having no prior native Android experience. The code reflects that approach: functional and goal-oriented, but with room for improvement. **Expert contributions are very welcome** — whether it's bug fixes, code review, or broader improvements to the app. Version history is available in [GitHub Releases](https://github.com/Kiroha/byd-dashcast/releases).
 
 ---

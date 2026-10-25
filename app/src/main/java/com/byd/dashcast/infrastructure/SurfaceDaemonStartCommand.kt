@@ -1,5 +1,7 @@
 package com.byd.dashcast.infrastructure
 
+import com.byd.dashcast.proxy.AppIdentity
+
 /**
  * Builds the `app_process` shell command that spawns the
  * [com.byd.dashcast.proxy.daemon.SurfaceDaemon], with launcher descriptors that cannot keep the ADB
@@ -17,7 +19,7 @@ object SurfaceDaemonStartCommand {
         // entry point and MUST track the Java class name — both ship in the same APK.
         val child = "CLASSPATH=" + quote(apkPath) +
             " exec /system/bin/app_process64 -Xnoimage-dex2oat /system/bin" +
-            " --nice-name=byd.mirror.daemon" +
+            " --nice-name=" + AppIdentity.MIRROR_SPAWN_NAME +
             " com.byd.dashcast.proxy.daemon.SurfaceDaemon" +
             " </dev/null >" + quote(logPath) + " 2>&1"
         return "setsid sh -c " + quote(child) +

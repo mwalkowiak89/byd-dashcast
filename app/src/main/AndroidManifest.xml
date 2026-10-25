@@ -7,9 +7,9 @@
          (i.e. this APK itself) hold the permission and can receive the binder.
          Other apps on the device are filtered out by AMS before delivery. -->
     <permission
-        android:name="com.byd.dashcast.permission.DAEMON_READY"
+        android:name="${applicationId}.permission.DAEMON_READY"
         android:protectionLevel="signature" />
-    <uses-permission android:name="com.byd.dashcast.permission.DAEMON_READY" />
+    <uses-permission android:name="${applicationId}.permission.DAEMON_READY" />
 
     <!-- ===== PERMISSIONS BYD AUTO API ===== -->
 

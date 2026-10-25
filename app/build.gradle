@@ -72,8 +72,20 @@ android {
     compileSdkVersion 33
     // buildToolsVersion omis : AGP 7.4.2 utilise automatiquement 30.0.3
 
+    // Bydlak Dash fork identity. `namespace` stays com.byd.dashcast so upstream merges stay
+    // mechanical; everything that is global on the head unit (package id, daemon process and
+    // ServiceManager names, /data/local/tmp files, the OTA source) derives from these values
+    // through com.byd.dashcast.proxy.AppIdentity, so this build can sit next to upstream DashCast.
+    def forkApplicationId = 'pl.mwalkowiak.bydlakdash'
+    def forkDeviceTag = 'bydlakdash'
+    def forkApkBaseName = 'BydlakDash'
+    def forkUpdateRepo = 'mwalkowiak89/byd-dashcast'
+
     defaultConfig {
-        applicationId "com.byd.dashcast"
+        applicationId forkApplicationId
+        buildConfigField 'String', 'DEVICE_TAG', "\"${forkDeviceTag}\""
+        buildConfigField 'String', 'APK_BASE_NAME', "\"${forkApkBaseName}\""
+        buildConfigField 'String', 'UPDATE_REPO', "\"${forkUpdateRepo}\""
         minSdkVersion 28
         targetSdkVersion 29
         // Public versionName bumped to 1.2.31 for the LOT 3 perf pass:
@@ -2026,7 +2038,7 @@ android {
         variant.outputs.all { output ->
             // AUD-156 — a release the platform key did not sign must not wear the release name.
             def suffix = (!hasPlatformKeystore && variant.buildType.name == 'release') ? '-debugsigned' : ''
-            outputFileName = "DashCast-v${variant.versionName}-${variant.buildType.name}${suffix}.apk"
+            outputFileName = "${forkApkBaseName}-v${variant.versionName}-${variant.buildType.name}${suffix}.apk"
         }
 
         // AUD-152 — keep the mapping WITH the release it belongs to.

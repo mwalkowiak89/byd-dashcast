@@ -159,7 +159,7 @@ public final class BugReportCapture {
             // notification-reading apps (an app inventory) to the support channel.
             + " ; echo '--- NOTIFICATION ACCESS (dashcast) ---' >> " + p
             + " ; { settings get secure enabled_notification_listeners 2>/dev/null"
-            + "     | grep -q com.byd.dashcast && echo granted || echo NOT-granted ; } >> " + p
+            + "     | grep -q " + com.byd.dashcast.proxy.AppIdentity.PACKAGE + " && echo granted || echo NOT-granted ; } >> " + p
             // ── LOGS ──
             // TIME-ANCHORED, not line-counted. `logcat -t <N lines>` is worthless on a unit with
             // a log-spamming third party: on the DL4 car com.andrerinas.headunitrevived sprays
@@ -312,7 +312,7 @@ public final class BugReportCapture {
             // the uid-2000 daemon that launches apps) hold what they need on a new ROM, e.g. any
             // car/cluster/projection signature permissions.
             + " ; echo '--- DASHCAST PACKAGE (grants/flags) ---' >> " + p
-            + " ; dumpsys package com.byd.dashcast 2>/dev/null | grep -iE 'versionName|flags=|pkgFlags|privateFlags|sharedUser|granted=true|cluster|instrument|projection' | head -90 >> " + p
+            + " ; dumpsys package " + com.byd.dashcast.proxy.AppIdentity.PACKAGE + " 2>/dev/null | grep -iE 'versionName|flags=|pkgFlags|privateFlags|sharedUser|granted=true|cluster|instrument|projection' | head -90 >> " + p
             // Input → display/viewport mapping: which input device feeds the cluster display, to
             // tell a touch-routing problem apart from a rendering problem on projected apps.
             + " ; echo '--- INPUT (display/viewport) ---' >> " + p
@@ -376,9 +376,9 @@ public final class BugReportCapture {
             // [ATTACH_SLOT] block out entirely. ~32 KB — nowhere near the body cap that a
             // previous over-raise of the LOGCAT depth blew through.
             + " ; echo '--- MIRRORDAEMON LOG ---' >> " + p
-            + " ; cat /data/local/tmp/mirrordaemon_latest.log 2>/dev/null | tail -400 >> " + p
+            + " ; cat " + com.byd.dashcast.proxy.AppIdentity.tmp("_mirrordaemon_latest.log") + " 2>/dev/null | tail -400 >> " + p
             + " ; echo '--- PROXYDAEMON LOG ---' >> " + p
-            + " ; cat /data/local/tmp/dashcast_proxy.log 2>/dev/null | tail -200 >> " + p
+            + " ; cat " + com.byd.dashcast.proxy.AppIdentity.tmp("_proxy.log") + " 2>/dev/null | tail -200 >> " + p
             + " ; echo '=== END SHELL DUMP ===' >> " + p;
     }
 

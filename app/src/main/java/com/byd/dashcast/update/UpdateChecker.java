@@ -54,9 +54,9 @@ public class UpdateChecker {
     private static final java.util.concurrent.atomic.AtomicBoolean sChecking =
             new java.util.concurrent.atomic.AtomicBoolean(false);
     private static final String RELEASES_LATEST_API =
-            "https://api.github.com/repos/Kiroha/byd-dashcast/releases/latest";
+            "https://api.github.com/repos/" + com.byd.dashcast.proxy.AppIdentity.UPDATE_REPO + "/releases/latest";
     private static final String RELEASES_LIST_API =
-            "https://api.github.com/repos/Kiroha/byd-dashcast/releases?per_page=100&page=";
+            "https://api.github.com/repos/" + com.byd.dashcast.proxy.AppIdentity.UPDATE_REPO + "/releases?per_page=100&page=";
     private static final long MAX_APK_BYTES = 100L * 1024L * 1024L;
 
     public static final class ReleaseAsset {
@@ -197,7 +197,7 @@ public class UpdateChecker {
 
         // 2. Find APK asset URL
         JSONArray assets = release.getJSONArray("assets");
-        String expectedName = "DashCast-v" + latestVer + "-release.apk";
+        String expectedName = com.byd.dashcast.proxy.AppIdentity.APK_BASE_NAME + "-v" + latestVer + "-release.apk";
         ReleaseAsset selectedAsset = null;
         for (int i = 0; i < assets.length(); i++) {
             JSONObject asset = assets.getJSONObject(i);

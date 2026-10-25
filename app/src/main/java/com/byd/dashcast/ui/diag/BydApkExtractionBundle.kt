@@ -149,7 +149,7 @@ object BydApkExtractionBundle {
             sb.append("=== BYDAUTO permission namespace ===\n")
               .append(sh("pm list permissions 2>/dev/null | grep -i bydauto | head -c 12000")).append("\n\n")
             sb.append("=== BYDAUTO perms held by DashCast ===\n")
-              .append(sh("dumpsys package com.byd.dashcast 2>/dev/null | grep -i bydauto | head -c 8000")).append("\n\n")
+              .append(sh("dumpsys package ${com.byd.dashcast.proxy.AppIdentity.PACKAGE} 2>/dev/null | grep -i bydauto | head -c 8000")).append("\n\n")
             sb.append("=== BYDAUTO perms held by the daemon's identity (shell) ===\n")
               .append(sh("dumpsys package com.android.shell 2>/dev/null | grep -i bydauto | head -c 8000")).append("\n\n")
             sb.append("=== AutoContainer type allow-list ===\n")

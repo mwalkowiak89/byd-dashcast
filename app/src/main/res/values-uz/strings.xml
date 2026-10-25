@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">DashCast</string>
+    <string name="app_name">Bydlak Dash</string>
     <string name="welcome_subtitle">Asboblar panelini boshqarish</string>
     <string name="welcome_subtitle_fmt">BYD CLUSTER MIRROR · v%1$s</string>
     <string name="welcome_select_lang">Tilni tanlang\nPlease select your language</string>
@@ -63,7 +63,7 @@
     <string name="settings_header">Sozlamalar</string>
     <string name="settings_cluster_type_title">Klaster turi</string>
     <string name="ota_dialog_title">Yangilanish mavjud</string>
-    <string name="ota_up_to_date">DashCast yangilangan</string>
+    <string name="ota_up_to_date">Bydlak Dash yangilangan</string>
     <string name="btn_lang_ar">🇲🇦  العربية</string>
     <string name="btn_lang_pl">🇵🇱  Polski</string>
     <string name="btn_lang_es">🇪🇸  Español</string>
@@ -177,7 +177,7 @@
     <string name="sysinfo_section_full_report">To‘liq hisobot</string>
     <string name="sysinfo_tile_vehicle">Transport</string>
     <string name="sysinfo_tile_android">Android</string>
-    <string name="sysinfo_tile_dashcast">DashCast</string>
+    <string name="sysinfo_tile_dashcast">Bydlak Dash</string>
     <string name="sysinfo_tile_uptime">Ish vaqti</string>
     <string name="sysinfo_tile_uptime_since">%1$s dan beri</string>
     <string name="sysinfo_disp_main">Asosiy</string>
@@ -216,20 +216,20 @@
 
     <!-- ═══════════════ DiLink 5 — Dedicated diagnostic (v1.1.0-beta2) ═══════════════ -->
     <!-- v1.2.10 — IME a11y onboarding banner (DL5) -->
-    <string name="a11y_ime_watcher_label">Klaster avto-klaviaturasi (DashCast)</string>
+    <string name="a11y_ime_watcher_label">Klaster avto-klaviaturasi (Bydlak Dash)</string>
     <string name="a11y_ime_watcher_summary">Klasterdagi matn maydoniga tegsangiz, ko\'prikli klaviaturani ko\'rsatadi.</string>
-    <string name="a11y_ime_watcher_description">DashCast klaviatura ko\'prigini avtomatik ochish uchun klaster ekranidagi fokus voqealarini kuzatadi. Maydon mazmunini o\'qimaydi yoki saqlamaydi.</string>
+    <string name="a11y_ime_watcher_description">Bydlak Dash klaviatura ko\'prigini avtomatik ochish uchun klaster ekranidagi fokus voqealarini kuzatadi. Maydon mazmunini o\'qimaydi yoki saqlamaydi.</string>
     <string name="ime_banner_title">Klasterda avto-klaviatura</string>
-    <string name="ime_banner_body">Bu avtomobilda (DiLink 5) tizim klaviaturasi klasterda ko\'rinishi mumkin emas. Matn maydoniga teganingizda DashCast klaviatura ko\'prigini avtomatik ochishi uchun maxsus imkoniyatlar xizmatini yoqing. Aks holda oynadagi ⌨ tugmasidan foydalaning.</string>
+    <string name="ime_banner_body">Bu avtomobilda (DiLink 5) tizim klaviaturasi klasterda ko\'rinishi mumkin emas. Matn maydoniga teganingizda Bydlak Dash klaviatura ko\'prigini avtomatik ochishi uchun maxsus imkoniyatlar xizmatini yoqing. Aks holda oynadagi ⌨ tugmasidan foydalaning.</string>
     <string name="ime_banner_btn_enable">Yoqish</string>
     <string name="ime_banner_btn_later">Keyinroq</string>
     <string name="ime_banner_btn_dismiss">Boshqa ko\'rsatilmasin</string>
     <string name="ime_banner_toast_enabled">Avto-klaviatura faol ✓</string>
     <string name="ime_banner_toast_cannot_open_settings">Sozlamalarni ochib bo\'lmadi — « Klaster avto-klaviaturasi » maxsus imkoniyatlar xizmatini qo\'lda yoqing.</string>
     <string name="hud_notif_banner_title">HUD Navigatsiya — bildirishnomaga kirish talab qilinadi</string>
-    <string name="hud_notif_banner_body">DashCast klaster ekranida navigatsiya ko\'rsatmalarini ko\'rsatish uchun bildirishnomalarga kirishni talab qiladi. Sozlamalar → Maxsus ilova kirishi → Bildirishnomalarga kirish → DashCast bo\'limidan yoqing.</string>
+    <string name="hud_notif_banner_body">Bydlak Dash klaster ekranida navigatsiya ko\'rsatmalarini ko\'rsatish uchun bildirishnomalarga kirishni talab qiladi. Sozlamalar → Maxsus ilova kirishi → Bildirishnomalarga kirish → Bydlak Dash bo\'limidan yoqing.</string>
     <string name="hud_notif_banner_toast_enabled">Bildirishnomalarga kirish berildi ✓</string>
-    <string name="keyboard_bridge_a11y_required_toast">Klaviatura asboblar paneli ekranida ishlashi uchun Sozlamalar → Maxsus imkoniyatlar bo\'limidan « DashCast Cluster IME » xizmatini yoqing.</string>
+    <string name="keyboard_bridge_a11y_required_toast">Klaviatura asboblar paneli ekranida ishlashi uchun Sozlamalar → Maxsus imkoniyatlar bo\'limidan « Bydlak Dash Cluster IME » xizmatini yoqing.</string>
     <string name="btn_keyboard">⌨</string>
     <string name="btn_keyboard_desc">Klaviatura</string>
     <string name="keyboard_bridge_title">Masofaviy klaviatura</string>
@@ -238,7 +238,7 @@
 
     <!-- v1.2.28 i18n full: ADAS / Sniffer / Settings warnings -->
     <string name="settings_no_browser_fmt">%1$s ochish uchun brauzer mavjud emas</string>
-    <string name="keyboard_bridge_active_toast">DashCast Cluster IME ✓</string>
+    <string name="keyboard_bridge_active_toast">Bydlak Dash Cluster IME ✓</string>
     <string name="sysinfo_restart_action">Qayta ishga tushir</string>
     <string name="sysinfo_restart_started">Qayta ishga tushirilmoqda…</string>
     <string name="sysinfo_restart_failed">Qayta ishga tushirish muvaffaqiyatsiz</string>
@@ -262,7 +262,7 @@
     <string name="hotspot_back">Orqaga</string>
     <string name="hotspot_hero_title">TetherFi orqali 4G hotspot</string>
     <string name="hotspot_hero_subtitle">Mobil internetingizni bir necha teginishda ulashing</string>
-    <string name="hotspot_intro">O\'rnatilgan hotspot DiLink 3-da mavjud emas. Buning o\'rniga DashCast tizim ruxsatisiz Wi-Fi Direct kirish nuqtasi + SOCKS5 proksi yaratadigan TetherFi\'ni (ochiq kodli) boshqaradi va avtomobil SIM-kartasi yuqori oqim sifatida ishlatiladi.</string>
+    <string name="hotspot_intro">O\'rnatilgan hotspot DiLink 3-da mavjud emas. Buning o\'rniga Bydlak Dash tizim ruxsatisiz Wi-Fi Direct kirish nuqtasi + SOCKS5 proksi yaratadigan TetherFi\'ni (ochiq kodli) boshqaradi va avtomobil SIM-kartasi yuqori oqim sifatida ishlatiladi.</string>
     <string name="hotspot_tf_status_unknown">⏳ Aniqlanmoqda…</string>
     <string name="hotspot_tf_status_installed">🟢 TetherFi o\'rnatilgan — versiya %1$s</string>
     <string name="hotspot_tf_status_missing">🔴 TetherFi o\'rnatilmagan. So\'nggi versiyani olish uchun «O\'rnatish» tugmasini bosing.</string>
@@ -296,7 +296,7 @@
     <string name="settings_use_own_sim_support">Mobil internetingizni TetherFi orqali ulashishingiz uchun navigatsiya panelida «Hotspot» tugmasini ko\'rsatadi (faqat DiLink 3).</string>
     <string name="proxy_keeper_channel_name">Proksi demoni</string>
     <string name="proxy_keeper_channel_desc">Proksi demonini fonda mavjud saqlaydi</string>
-    <string name="proxy_keeper_notif_title">DashCast — proksi faol</string>
+    <string name="proxy_keeper_notif_title">Bydlak Dash — proksi faol</string>
     <string name="proxy_keeper_notif_text">Demon har 10 soniyada tekshiriladi</string>
     <!-- v1.2.76 — Reboot button + dialog -->
     <string name="sysinfo_btn_reboot">Qayta yoqish</string>
@@ -334,7 +334,7 @@
     <string name="fission_slot_pkg_none">Yo\'q — bo\'sh hudud</string>
     <string name="fission_slot_zone_bound_fmt">Bog\'langan ilova: %1$s</string>
     <string name="settings_fission_auto_layout">Avtomatik sevimli tartib</string>
-    <string name="settings_fission_auto_layout_support">DashCast ishga tushganda: klaster proyeksiyasini, sevimli tartibni faollashtiradi va bog\'langan ilovalarni ishga tushiradi</string>
+    <string name="settings_fission_auto_layout_support">Bydlak Dash ishga tushganda: klaster proyeksiyasini, sevimli tartibni faollashtiradi va bog\'langan ilovalarni ishga tushiradi</string>
     <string name="settings_fission_precreate_slots">Slotlarni ishga tushirishda oldindan yaratish</string>
     <string name="settings_fission_precreate_slots_support">Fission ochilganda sevimli tartibning Virtual Display\'larini tayyorlaydi (ilovalarni ishga tushirmasdan)</string>
     <string name="sysinfo_disp_hidden">Yashirin (PRIVATE)</string>
@@ -346,10 +346,10 @@
     <string name="fo_err_attach_fmt">%1$s uchun slot yaratib bo\'lmadi</string>
     <string name="fo_err_daemon">Daemon mavjud emas</string>
     <string name="fo_err_proxy">Proxy ADB Daemon ulanmagan. Uni Sozlamalarda yoqing.</string>
-    <string name="adb_transport_unresponsive">ADB ulanishni qabul qiladi, lekin buyruqlarga javob bermaydi. Android nosozliklarni tuzatish xizmatini (adbd) qayta ishga tushiring, so‘ng DashCast-ni qayta oching.</string>
-    <string name="adb_transport_key_unauthorized">ADB mavjud, ammo DashCast kaliti ruxsat etilmagan. «USB orqali nosozliklarni tuzatishga ruxsat berish» so‘rovini «Har doim ruxsat berish» bilan tasdiqlang va DashCast-ni qayta oching.</string>
-    <string name="adb_transport_unreachable">Bu avtomobilda TCP orqali ADB mavjud emas. 5555-portda TCP orqali Android nosozliklarni tuzatishni yoqing va DashCast-ni qayta oching.</string>
-    <string name="adb_transport_handshake">ADB ulanishi vaqtincha o‘rnatilmadi. DashCast avtomatik ravishda qayta urinadi.</string>
+    <string name="adb_transport_unresponsive">ADB ulanishni qabul qiladi, lekin buyruqlarga javob bermaydi. Android nosozliklarni tuzatish xizmatini (adbd) qayta ishga tushiring, so‘ng Bydlak Dash-ni qayta oching.</string>
+    <string name="adb_transport_key_unauthorized">ADB mavjud, ammo Bydlak Dash kaliti ruxsat etilmagan. «USB orqali nosozliklarni tuzatishga ruxsat berish» so‘rovini «Har doim ruxsat berish» bilan tasdiqlang va Bydlak Dash-ni qayta oching.</string>
+    <string name="adb_transport_unreachable">Bu avtomobilda TCP orqali ADB mavjud emas. 5555-portda TCP orqali Android nosozliklarni tuzatishni yoqing va Bydlak Dash-ni qayta oching.</string>
+    <string name="adb_transport_handshake">ADB ulanishi vaqtincha o‘rnatilmadi. Bydlak Dash avtomatik ravishda qayta urinadi.</string>
     <string name="fo_status_autoactivate">Tartib avtomatik faollashtirilmoqda…</string>
     <string name="fo_status_autolayout_err_fmt">Avto-tartib xatosi: %1$s</string>
     <string name="fo_status_create_fmt">%1$s uchun slot yaratilmoqda…</string>
@@ -411,7 +411,7 @@
     <string name="bug_status_slow">Yuborish kutilganidan uzoqroq davom etmoqda — bekor qilishingiz mumkin.</string>
     <string name="bug_status_error_fmt">Xato: %1$s</string>
     <string name="bug_sent_ok">Hisobot yuborildi ✓ Rahmat!</string>
-    <string name="bug_share_subject">DashCast — Xato hisoboti</string>
+    <string name="bug_share_subject">Bydlak Dash — Xato hisoboti</string>
     <string name="bug_share_chooser">Hisobotni yuborish…</string>
 
     <!-- Bug Wizard (keyboard-free, 3-step) -->
@@ -477,7 +477,7 @@
     <string-array name="bug_issues_freeze">
         <item>Ilova ishdan chiqdi</item>
         <item>Ekran muzladi</item>
-        <item>DashCast ishdan chiqdi</item>
+        <item>Bydlak Dash ishdan chiqdi</item>
         <item>Avtomobil ekrani qora</item>
         <item>Qayta ishga tushirishga to’g’ri keldi</item>
         <item>Proyeksiya to’xtagach sekin</item>
@@ -508,11 +508,11 @@
     <string name="bug_wizard_selected_fmt">Tanlandi: %1$s</string>
     <string name="toast_adb_port_refused">ADB ulanib bo\'lmadi (5555-port) — bu qurilmada ko\'zgu mavjud emas</string>
     <string name="aaos_cluster_unsupported_title">Asboblar paneliga proyeksiya bloklangan</string>
-    <string name="aaos_cluster_unsupported_msg">Avtomobilingiz BYD\'ning Android Automotive tizimidan (DX_BYD_AUTO) foydalanadi. Bu qurilmada asboblar paneli ishlab chiqaruvchi tomonidan qulflangan: BYD uni o\'rnatilgan navigatsiya uchun ajratadi va ilovalarni proyeksiya qilishni bloklaydi. Bu — avtomobil cheklovi (DashCast cheklovi emas), chetlab o\'tish yo\'li yo\'q.</string>
+    <string name="aaos_cluster_unsupported_msg">Avtomobilingiz BYD\'ning Android Automotive tizimidan (DX_BYD_AUTO) foydalanadi. Bu qurilmada asboblar paneli ishlab chiqaruvchi tomonidan qulflangan: BYD uni o\'rnatilgan navigatsiya uchun ajratadi va ilovalarni proyeksiya qilishni bloklaydi. Bu — avtomobil cheklovi (Bydlak Dash cheklovi emas), chetlab o\'tish yo\'li yo\'q.</string>
     <string name="dl3_singleos_cluster_unsupported_title">Asboblar paneliga proyeksiya mavjud emas</string>
-    <string name="dl3_singleos_cluster_unsupported_msg">Bu avtomobilda asboblar paneli bitta ekranli (single-OS) tartibdan foydalanadi: u bevosita avtomobil tomonidan chiziladi va ilovalarni proyeksiya qilish mumkin bo\'lgan alohida ekran yo\'q. Shu sababli bu yerda ilovalarni panelga proyeksiya qilish imkonsiz — bu avtomobilingiz asboblar panelining xususiyati, DashCast cheklovi emas.</string>
+    <string name="dl3_singleos_cluster_unsupported_msg">Bu avtomobilda asboblar paneli bitta ekranli (single-OS) tartibdan foydalanadi: u bevosita avtomobil tomonidan chiziladi va ilovalarni proyeksiya qilish mumkin bo\'lgan alohida ekran yo\'q. Shu sababli bu yerda ilovalarni panelga proyeksiya qilish imkonsiz — bu avtomobilingiz asboblar panelining xususiyati, Bydlak Dash cheklovi emas.</string>
     <string name="dl4_cluster_unsupported_title">Asboblar paneliga proyeksiya proshivka tomonidan bloklangan</string>
-    <string name="dl4_cluster_unsupported_msg">Ushbu avtomobilda proshivka DashCast ilovasiga asboblar paneli ekranini ko\'rishga ruxsat bermaydi: ilova ishlab chiqaruvchi ekranlarni sanab o\'tishga ruxsat bergan dasturlar ro\'yxatida yo\'q. DashCast o\'zining imtiyozli yordamchisi orqali ham so\'radi, u ham asboblar paneli ekranini topmadi. Shu sababli ilovalarni asboblar paneliga proyeksiya qilish ushbu proshivka versiyasida mumkin emas — bu ishlab chiqaruvchining cheklovi, DashCast cheklovi emas.</string>
+    <string name="dl4_cluster_unsupported_msg">Ushbu avtomobilda proshivka Bydlak Dash ilovasiga asboblar paneli ekranini ko\'rishga ruxsat bermaydi: ilova ishlab chiqaruvchi ekranlarni sanab o\'tishga ruxsat bergan dasturlar ro\'yxatida yo\'q. Bydlak Dash o\'zining imtiyozli yordamchisi orqali ham so\'radi, u ham asboblar paneli ekranini topmadi. Shu sababli ilovalarni asboblar paneliga proyeksiya qilish ushbu proshivka versiyasida mumkin emas — bu ishlab chiqaruvchining cheklovi, Bydlak Dash cheklovi emas.</string>
     <!-- HUD diagnostic bug-report — tester-facing result choices (13 locales) -->
     <string name="hud_bench_result_title">Natija — nimani ko\'rding va QAYERDA (cluster yoki old oyna)?</string>
     <string name="hud_bench_opt_cluster">✅ Strelka CLUSTER\'da (rul orqasida)</string>
@@ -549,36 +549,36 @@
     <string name="bug_hud_gate_yes">✅ Ha, strelkalarni ko\'rsatadi</string>
     <string name="bug_hud_gate_no">❌ Yo\'q, hech qachon</string>
     <string name="bug_hud_gate_unknown">❓ Bilmayman</string>
-    <string name="bug_hud_no_arrows_msg">Unda HUD\'ingning proshivkasi burilish strelkalarini umuman ko\'rsata olmaydi — DashCast ham ularni qo\'sha olmaydi. Bizning tomonimizdan tuzatadigan narsa yo\'q, shuning uchun bu hisobotni yuborishning hojati yo\'q. Baribir rahmat!</string>
+    <string name="bug_hud_no_arrows_msg">Unda HUD\'ingning proshivkasi burilish strelkalarini umuman ko\'rsata olmaydi — Bydlak Dash ham ularni qo\'sha olmaydi. Bizning tomonimizdan tuzatadigan narsa yo\'q, shuning uchun bu hisobotni yuborishning hojati yo\'q. Baribir rahmat!</string>
     <!-- HUD gate 2 — which nav app the user relies on (v1.6.140) -->
     <string name="bug_hud_nav_title">Navigatsiya uchun qaysi ilovadan foydalanasan?</string>
     <string name="bug_hud_nav_oem">Mashinamning oʻz navigatsiyasi</string>
-    <string name="bug_hud_nav_unsupported_msg">DashCast HUD\'dagi strelkalarni faqat Google Maps yoki Waze\'dan aks ettira oladi. Mashinangning oʻz navigatsiyasi (Telenav…) oʻz maʼlumotlarini DashCast oʻqiy olmaydigan formatda uzatadi — lekin u allaqachon HUD\'da oʻzining strelkalarini koʻrsatib turadi. DashCast orqali strelkalar olish uchun Google Maps yoki Waze\'da navigatsiyani ishga tushir.</string>
+    <string name="bug_hud_nav_unsupported_msg">Bydlak Dash HUD\'dagi strelkalarni faqat Google Maps yoki Waze\'dan aks ettira oladi. Mashinangning oʻz navigatsiyasi (Telenav…) oʻz maʼlumotlarini Bydlak Dash oʻqiy olmaydigan formatda uzatadi — lekin u allaqachon HUD\'da oʻzining strelkalarini koʻrsatib turadi. Bydlak Dash orqali strelkalar olish uchun Google Maps yoki Waze\'da navigatsiyani ishga tushir.</string>
     <string name="bug_hud_nav_understood">Tushundim, Maps yoki Waze\'dan foydalanaman</string>
     <string name="bug_hud_nav_report_anyway">Hisobotni baribir yuborish</string>
     <!-- HUD gate 3 — no route running (v1.6.143) -->
-    <string name="bug_hud_no_route_msg">Hozir hech qanday marshrut faol emas. DashCast yoʻnalish koʻrsatmalarini faqat faol navigatsiya paytida oladi: Google Maps yoki Waze\'ni shunchaki ochishning oʻzi yetarli emas. Biror manzilga marshrut boshla, keyin HUD\'ga qara — strelka paydo boʻlishi kerak.</string>
+    <string name="bug_hud_no_route_msg">Hozir hech qanday marshrut faol emas. Bydlak Dash yoʻnalish koʻrsatmalarini faqat faol navigatsiya paytida oladi: Google Maps yoki Waze\'ni shunchaki ochishning oʻzi yetarli emas. Biror manzilga marshrut boshla, keyin HUD\'ga qara — strelka paydo boʻlishi kerak.</string>
     <string name="bug_hud_no_route_understood">Tushundim, marshrut boshlayman</string>
-    <string name="bug_hud_no_notif_access_msg">DashCast’ning bildirishnomalarga ruxsati yoʻq. Busiz boʻlmaydi: burilish koʻrsatmalari Google Maps yoki Waze bildirishnomasidan oʻqiladi. Android Sozlamalar → Bildirishnomalar → Bildirishnomalardan foydalanish boʻlimiga kirib, DashCast’ga ruxsat ber, keyin marshrutni qaytadan ishga tushir.</string>
+    <string name="bug_hud_no_notif_access_msg">Bydlak Dash’ning bildirishnomalarga ruxsati yoʻq. Busiz boʻlmaydi: burilish koʻrsatmalari Google Maps yoki Waze bildirishnomasidan oʻqiladi. Android Sozlamalar → Bildirishnomalar → Bildirishnomalardan foydalanish boʻlimiga kirib, Bydlak Dash’ga ruxsat ber, keyin marshrutni qaytadan ishga tushir.</string>
     <string name="hud_sweep_result_title">Skanerlash tugadi — CLUSTERda nima koʻrding?</string>
     <string name="hud_sweep_opt_photographed">📷 Belgilarni suratga oldim</string>
     <string name="hud_sweep_opt_nothing">❌ CLUSTERda hech narsa chiqmadi</string>
     <!-- Bug report delivery — pairing. -->
     <string name="pairing_row_title">Xato hisobotlarini yuborish</string>
-    <string name="pairing_state_on">Yoqilgan — hisobotlaringiz DashCast jamoasiga yuboriladi</string>
+    <string name="pairing_state_on">Yoqilgan — hisobotlaringiz Bydlak Dash jamoasiga yuboriladi</string>
     <string name="pairing_state_off">Oʻchirilgan — hisobotlaringiz shu qurilmada qoladi</string>
     <!-- Consent to send diagnostics. Shown the first time the user taps Send on a report,
          and re-readable from Settings. The body lists what a report actually contains: it was
          written from a verified inventory of the collection code, not from memory. If what the
          app collects changes, the list changes AND ReportConsent.NOTICE_VERSION goes up. -->
     <string name="pairing_state_on_no_channel">Rozilik berilgan, ammo bu qurilmada kanal sozlanmagan</string>
-    <string name="consent_title">Diagnostika DashCast jamoasiga yuborilsinmi?</string>
-    <string name="consent_body">Muammoni tuzatish uchun DashCast jamoasi oʻsha paytda avtomobilda nima boʻlganini bilishi kerak.\n\nYuborishdan oldin DashCast har bir hisobotdan VIN raqamini, Wi-Fi tarmoq nomlarini, qurilmalarning apparat manzillarini va joylashuvlarni avtomatik olib tashlaydi.\n\nQoladigani:\n\n•  DashCast jurnali va Android tizim jurnali, boricha nusxalanadi — ularda boshqa ilovalar yozganlari boʻladi va bu nima ekanini biz oldindan bila olmaymiz;\n\n•  avtomobil va bosh qurilma haqidagi maʼlumotlar: modeli, versiyasi, sozlamalari, oʻrnatilgan ilovalar;\n\n•  avtomobilning mahalliy IP manzili;\n\n•  shaklga yozganingiz va koʻrsatgan Telegram taxallusingiz;\n\n•  sukut boʻyicha yoqilgan ekran suratlari: markaziy ekran va asboblar panelining xiralashtirilmagan tasvirlari — ularda boradigan joyingiz koʻrsatilgan xarita boʻlishi mumkin, tasvirni esa matn kabi filtrlab boʻlmaydi. Ular haqida har safar yuborishda alohida soʻraladi.\n\n«Yuborish»ga bosmaguningizcha avtomobildan birorta hisobot chiqmaydi. Hisobotlarni DashCast jamoasi yopiq guruhda oʻqiydi. DashCast hech qanday ovoz yozuvi, surat, kontakt yoki xabar yubormaydi.\n\nRad etsangiz, hisobot shu qurilmada qoladi va uni oʻzingiz ulashishingiz mumkin. Fikringizni istalgan vaqtda Sozlamalarda oʻzgartirasiz.</string>
+    <string name="consent_title">Diagnostika Bydlak Dash jamoasiga yuborilsinmi?</string>
+    <string name="consent_body">Muammoni tuzatish uchun Bydlak Dash jamoasi oʻsha paytda avtomobilda nima boʻlganini bilishi kerak.\n\nYuborishdan oldin Bydlak Dash har bir hisobotdan VIN raqamini, Wi-Fi tarmoq nomlarini, qurilmalarning apparat manzillarini va joylashuvlarni avtomatik olib tashlaydi.\n\nQoladigani:\n\n•  Bydlak Dash jurnali va Android tizim jurnali, boricha nusxalanadi — ularda boshqa ilovalar yozganlari boʻladi va bu nima ekanini biz oldindan bila olmaymiz;\n\n•  avtomobil va bosh qurilma haqidagi maʼlumotlar: modeli, versiyasi, sozlamalari, oʻrnatilgan ilovalar;\n\n•  avtomobilning mahalliy IP manzili;\n\n•  shaklga yozganingiz va koʻrsatgan Telegram taxallusingiz;\n\n•  sukut boʻyicha yoqilgan ekran suratlari: markaziy ekran va asboblar panelining xiralashtirilmagan tasvirlari — ularda boradigan joyingiz koʻrsatilgan xarita boʻlishi mumkin, tasvirni esa matn kabi filtrlab boʻlmaydi. Ular haqida har safar yuborishda alohida soʻraladi.\n\n«Yuborish»ga bosmaguningizcha avtomobildan birorta hisobot chiqmaydi. Hisobotlarni Bydlak Dash jamoasi yopiq guruhda oʻqiydi. Bydlak Dash hech qanday ovoz yozuvi, surat, kontakt yoki xabar yubormaydi.\n\nRad etsangiz, hisobot shu qurilmada qoladi va uni oʻzingiz ulashishingiz mumkin. Fikringizni istalgan vaqtda Sozlamalarda oʻzgartirasiz.</string>
     <string name="consent_accept">Roziman</string>
     <string name="consent_refuse">Rad etish</string>
     <string name="consent_revoke">Bekor qilish</string>
     <string name="consent_close">Yopish</string>
-    <string name="consent_result_granted">Rahmat. Hisobotlaringiz DashCast jamoasiga yuboriladi.</string>
+    <string name="consent_result_granted">Rahmat. Hisobotlaringiz Bydlak Dash jamoasiga yuboriladi.</string>
     <string name="consent_result_refused">Rad etildi. Hisobotlaringiz shu qurilmada qoladi.</string>
     <string name="consent_result_revoked">Rozilik bekor qilindi. Hisobotlaringiz shu qurilmada qoladi.</string>
     <string name="bug_kept_locally_fmt">Hisobot shu qurilmada saqlandi: %1$s. Uni qanday uzatishni tanlang.</string>

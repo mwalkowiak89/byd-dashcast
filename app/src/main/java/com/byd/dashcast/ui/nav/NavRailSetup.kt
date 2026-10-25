@@ -34,7 +34,7 @@ object NavRailSetup {
         navHelp?.setOnClickListener {
             try {
                 val intent = Intent(Intent.ACTION_VIEW,
-                        "https://github.com/Kiroha/byd-dashcast".toUri())
+                        "https://github.com/${com.byd.dashcast.proxy.AppIdentity.UPDATE_REPO}".toUri())
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 host.startActivity(intent)
             } catch (e: Exception) {

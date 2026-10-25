@@ -48,7 +48,7 @@ object SystemContextHelper {
 
     /** Our own package. Used to make the wrapped context report the app's
      *  identity to the BYD SDK (see {@link #adoptIdentity}). */
-    const val SELF_PKG = "com.byd.dashcast"
+    const val SELF_PKG = AppIdentity.PACKAGE
 
     /** Singleton cache — reflection is expensive, the system context never changes within a process. */
     @Volatile

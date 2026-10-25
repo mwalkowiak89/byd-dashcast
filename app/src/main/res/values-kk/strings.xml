@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">DashCast</string>
+    <string name="app_name">Bydlak Dash</string>
     <string name="welcome_subtitle">Аспаптар панелін басқару</string>
     <string name="welcome_subtitle_fmt">BYD CLUSTER MIRROR · v%1$s</string>
     <string name="welcome_select_lang">Тілді таңдаңыз\nPlease select your language</string>
@@ -63,7 +63,7 @@
     <string name="settings_header">Баптаулар</string>
     <string name="settings_cluster_type_title">Кластер түрі</string>
     <string name="ota_dialog_title">Жаңарту қол жетімді</string>
-    <string name="ota_up_to_date">DashCast жаңартылған</string>
+    <string name="ota_up_to_date">Bydlak Dash жаңартылған</string>
     <string name="btn_lang_ar">🇲🇦  العربية</string>
     <string name="btn_lang_pl">🇵🇱  Polski</string>
     <string name="btn_lang_es">🇪🇸  Español</string>
@@ -177,7 +177,7 @@
     <string name="sysinfo_section_full_report">Толық есеп</string>
     <string name="sysinfo_tile_vehicle">Көлік</string>
     <string name="sysinfo_tile_android">Android</string>
-    <string name="sysinfo_tile_dashcast">DashCast</string>
+    <string name="sysinfo_tile_dashcast">Bydlak Dash</string>
     <string name="sysinfo_tile_uptime">Жұмыс уақыты</string>
     <string name="sysinfo_tile_uptime_since">%1$s бастап</string>
     <string name="sysinfo_disp_main">Негізгі</string>
@@ -216,20 +216,20 @@
 
     <!-- ═══════════════ DiLink 5 — Dedicated diagnostic (v1.1.0-beta2) ═══════════════ -->
     <!-- v1.2.10 — IME a11y onboarding banner (DL5) -->
-    <string name="a11y_ime_watcher_label">Кластердің авто-пернетақтасы (DashCast)</string>
+    <string name="a11y_ime_watcher_label">Кластердің авто-пернетақтасы (Bydlak Dash)</string>
     <string name="a11y_ime_watcher_summary">Кластердегі мәтін өрісін түрткенде көпір пернетақтасын көрсетеді.</string>
-    <string name="a11y_ime_watcher_description">DashCast\'тің пернетақта көпірін автоматты ашу үшін кластер экранындағы фокус оқиғаларын бақылайды. Өріс мазмұнын оқымайды немесе сақтамайды.</string>
+    <string name="a11y_ime_watcher_description">Bydlak Dash\'тің пернетақта көпірін автоматты ашу үшін кластер экранындағы фокус оқиғаларын бақылайды. Өріс мазмұнын оқымайды немесе сақтамайды.</string>
     <string name="ime_banner_title">Кластерде авто-пернетақта</string>
-    <string name="ime_banner_body">Бұл көлікте (DiLink 5) жүйелік пернетақта кластерде көріне алмайды. Мәтін өрісін түрткенде DashCast пернетақта көпірін автоматты ашуы үшін арнайы мүмкіндіктер қызметін қосыңыз. Әйтпесе айнадағы ⌨ түймесін пайдаланыңыз.</string>
+    <string name="ime_banner_body">Бұл көлікте (DiLink 5) жүйелік пернетақта кластерде көріне алмайды. Мәтін өрісін түрткенде Bydlak Dash пернетақта көпірін автоматты ашуы үшін арнайы мүмкіндіктер қызметін қосыңыз. Әйтпесе айнадағы ⌨ түймесін пайдаланыңыз.</string>
     <string name="ime_banner_btn_enable">Қосу</string>
     <string name="ime_banner_btn_later">Кейінірек</string>
     <string name="ime_banner_btn_dismiss">Қайта көрсетпеу</string>
     <string name="ime_banner_toast_enabled">Авто-пернетақта белсенді ✓</string>
     <string name="ime_banner_toast_cannot_open_settings">Параметрлерді ашу мүмкін емес — « Кластер авто-пернетақтасы » арнайы мүмкіндіктер қызметін қолмен қосыңыз.</string>
     <string name="hud_notif_banner_title">HUD Навигация — хабарландыруларға қатынасу қажет</string>
-    <string name="hud_notif_banner_body">DashCast кластер экранында навигация нұсқаулықтарын көрсету үшін хабарландыруларға қатынасуды қажет етеді. Параметрлер → Арнайы қолданба қатынасы → Хабарландыруларға қатынасу → DashCast тармағынан қосыңыз.</string>
+    <string name="hud_notif_banner_body">Bydlak Dash кластер экранында навигация нұсқаулықтарын көрсету үшін хабарландыруларға қатынасуды қажет етеді. Параметрлер → Арнайы қолданба қатынасы → Хабарландыруларға қатынасу → Bydlak Dash тармағынан қосыңыз.</string>
     <string name="hud_notif_banner_toast_enabled">Хабарландыруларға қатынасу берілді ✓</string>
-    <string name="keyboard_bridge_a11y_required_toast">Пернетақта аспаптар тақтасында жұмыс істеуі үшін Параметрлер → Арнайы мүмкіндіктер бөлімінде « DashCast Cluster IME » қызметін қосыңыз.</string>
+    <string name="keyboard_bridge_a11y_required_toast">Пернетақта аспаптар тақтасында жұмыс істеуі үшін Параметрлер → Арнайы мүмкіндіктер бөлімінде « Bydlak Dash Cluster IME » қызметін қосыңыз.</string>
     <string name="btn_keyboard">⌨</string>
     <string name="btn_keyboard_desc">Пернетақта</string>
     <string name="keyboard_bridge_title">Қашықтан пернетақта</string>
@@ -238,7 +238,7 @@
 
     <!-- v1.2.28 i18n full: ADAS / Sniffer / Settings warnings -->
     <string name="settings_no_browser_fmt">%1$s ашуға арналған браузер жоқ</string>
-    <string name="keyboard_bridge_active_toast">DashCast Cluster IME ✓</string>
+    <string name="keyboard_bridge_active_toast">Bydlak Dash Cluster IME ✓</string>
     <string name="sysinfo_restart_action">Қайта іске қосу</string>
     <string name="sysinfo_restart_started">Қайта іске қосылуда…</string>
     <string name="sysinfo_restart_failed">Қайта іске қосу сәтсіз аяқталды</string>
@@ -262,7 +262,7 @@
     <string name="hotspot_back">Артқа</string>
     <string name="hotspot_hero_title">TetherFi арқылы 4G хотспот</string>
     <string name="hotspot_hero_subtitle">Мобильді деректеріңізді бірнеше түртумен бөлісіңіз</string>
-    <string name="hotspot_intro">Кірістірілген хотспот DiLink 3-те қолжетімсіз. Оның орнына DashCast жүйелік рұқсатсыз Wi-Fi Direct кіру нүктесін + SOCKS5 проксиін жасайтын TetherFi-ді (ашық бастапқы код) басқарады, ал көлік SIM-картасы байланыс арнасы ретінде пайдаланылады.</string>
+    <string name="hotspot_intro">Кірістірілген хотспот DiLink 3-те қолжетімсіз. Оның орнына Bydlak Dash жүйелік рұқсатсыз Wi-Fi Direct кіру нүктесін + SOCKS5 проксиін жасайтын TetherFi-ді (ашық бастапқы код) басқарады, ал көлік SIM-картасы байланыс арнасы ретінде пайдаланылады.</string>
     <string name="hotspot_tf_status_unknown">⏳ анықталуда…</string>
     <string name="hotspot_tf_status_installed">🟢 TetherFi орнатылған — нұсқа %1$s</string>
     <string name="hotspot_tf_status_missing">🔴 TetherFi орнатылмаған. Соңғы нұсқаны жүктеу үшін «Орнату» түймесін басыңыз.</string>
@@ -296,7 +296,7 @@
     <string name="settings_use_own_sim_support">Мобильді деректеріңізді TetherFi арқылы бөлісу үшін навигация жолағында «Хотспот» түймесін көрсетеді (тек DiLink 3).</string>
     <string name="proxy_keeper_channel_name">Прокси демон</string>
     <string name="proxy_keeper_channel_desc">Прокси демонды фонда қол жетімді етеді</string>
-    <string name="proxy_keeper_notif_title">DashCast — прокси белсенді</string>
+    <string name="proxy_keeper_notif_title">Bydlak Dash — прокси белсенді</string>
     <string name="proxy_keeper_notif_text">Демон 10 с сайын тексеріледі</string>
     <!-- v1.2.76 — Reboot button + dialog -->
     <string name="sysinfo_btn_reboot">Қайта қосу</string>
@@ -334,7 +334,7 @@
     <string name="fission_slot_pkg_none">Жоқ — бос аймақ</string>
     <string name="fission_slot_zone_bound_fmt">Байланысқан қолданба: %1$s</string>
     <string name="settings_fission_auto_layout">Автоматты таңдаулы орналасу</string>
-    <string name="settings_fission_auto_layout_support">DashCast іске қосылғанда: кластер проекциясын, таңдаулы орналасуды іске қосып, байланысқан қолданбаларды ашады</string>
+    <string name="settings_fission_auto_layout_support">Bydlak Dash іске қосылғанда: кластер проекциясын, таңдаулы орналасуды іске қосып, байланысқан қолданбаларды ашады</string>
     <string name="settings_fission_precreate_slots">Слоттарды іске қосылғанда алдын ала жасау</string>
     <string name="settings_fission_precreate_slots_support">Fission ашылғанда таңдаулы орналасудың Virtual Display-лерін дайындайды (қолданбаларды іске қоспай)</string>
     <string name="sysinfo_disp_hidden">Жасырын (PRIVATE)</string>
@@ -346,10 +346,10 @@
     <string name="fo_err_attach_fmt">%1$s үшін слот жасалмады</string>
     <string name="fo_err_daemon">Демон қолжетімсіз</string>
     <string name="fo_err_proxy">Proxy ADB Daemon қосылмаған. Оны Параметрлерден қосыңыз.</string>
-    <string name="adb_transport_unresponsive">ADB қосылымды қабылдайды, бірақ командаларға жауап бермейді. Android жөндеу қызметін (adbd) қайта іске қосып, DashCast қолданбасын қайта ашыңыз.</string>
-    <string name="adb_transport_key_unauthorized">ADB қолжетімді, бірақ DashCast кілті рұқсат етілмеген. «USB арқылы жөндеуге рұқсат беру» сұрауын «Әрқашан рұқсат беру» арқылы қабылдап, DashCast қолданбасын қайта ашыңыз.</string>
-    <string name="adb_transport_unreachable">Бұл көлікте TCP арқылы ADB қолжетімсіз. 5555 портында TCP арқылы Android жөндеуін қосып, DashCast қолданбасын қайта ашыңыз.</string>
-    <string name="adb_transport_handshake">ADB байланысы уақытша орнатылмады. DashCast әрекетті автоматты түрде қайталайды.</string>
+    <string name="adb_transport_unresponsive">ADB қосылымды қабылдайды, бірақ командаларға жауап бермейді. Android жөндеу қызметін (adbd) қайта іске қосып, Bydlak Dash қолданбасын қайта ашыңыз.</string>
+    <string name="adb_transport_key_unauthorized">ADB қолжетімді, бірақ Bydlak Dash кілті рұқсат етілмеген. «USB арқылы жөндеуге рұқсат беру» сұрауын «Әрқашан рұқсат беру» арқылы қабылдап, Bydlak Dash қолданбасын қайта ашыңыз.</string>
+    <string name="adb_transport_unreachable">Бұл көлікте TCP арқылы ADB қолжетімсіз. 5555 портында TCP арқылы Android жөндеуін қосып, Bydlak Dash қолданбасын қайта ашыңыз.</string>
+    <string name="adb_transport_handshake">ADB байланысы уақытша орнатылмады. Bydlak Dash әрекетті автоматты түрде қайталайды.</string>
     <string name="fo_status_autoactivate">Орналасу автоматты іске қосылуда…</string>
     <string name="fo_status_autolayout_err_fmt">Авто-орналасу қатесі: %1$s</string>
     <string name="fo_status_create_fmt">%1$s үшін слот жасалуда…</string>
@@ -411,7 +411,7 @@
     <string name="bug_status_slow">Жіберу күтілгеннен ұзақ жүріп жатыр — бас тартуға болады.</string>
     <string name="bug_status_error_fmt">Қате: %1$s</string>
     <string name="bug_sent_ok">Есеп жіберілді ✓ Рақмет!</string>
-    <string name="bug_share_subject">DashCast — Қате туралы есеп</string>
+    <string name="bug_share_subject">Bydlak Dash — Қате туралы есеп</string>
     <string name="bug_share_chooser">Есепті мынамен жіберу…</string>
 
     <!-- Bug Wizard (keyboard-free, 3-step) -->
@@ -477,7 +477,7 @@
     <string-array name="bug_issues_freeze">
         <item>Қосымша бұзылды</item>
         <item>Экран тоқтады</item>
-        <item>DashCast бұзылды</item>
+        <item>Bydlak Dash бұзылды</item>
         <item>Автомобиль экраны қара</item>
         <item>Қайта іске қосуға мәжбүр болды</item>
         <item>Проекцияны тоқтатқаннан кейін баяу</item>
@@ -508,11 +508,11 @@
     <string name="bug_wizard_selected_fmt">Таңдалды: %1$s</string>
     <string name="toast_adb_port_refused">ADB қолжетімсіз (5555 порты) — бұл құрылғыда айналау қолжетімсіз</string>
     <string name="aaos_cluster_unsupported_title">Аспаптар панеліне проекция бөгелген</string>
-    <string name="aaos_cluster_unsupported_msg">Көлігіңіз BYD-дің Android Automotive жүйесін (DX_BYD_AUTO) пайдаланады. Бұл құрылғыда аспаптар тақтасын өндіруші құлыптаған: BYD оны кірістірілген навигацияға арнайды және қолданбаларды проекциялауды бөгейді. Бұл — көліктің шектеуі (DashCast шектеуі емес), айналып өту жолы жоқ.</string>
+    <string name="aaos_cluster_unsupported_msg">Көлігіңіз BYD-дің Android Automotive жүйесін (DX_BYD_AUTO) пайдаланады. Бұл құрылғыда аспаптар тақтасын өндіруші құлыптаған: BYD оны кірістірілген навигацияға арнайды және қолданбаларды проекциялауды бөгейді. Бұл — көліктің шектеуі (Bydlak Dash шектеуі емес), айналып өту жолы жоқ.</string>
     <string name="dl3_singleos_cluster_unsupported_title">Аспаптар панеліне проекция қолжетімсіз</string>
-    <string name="dl3_singleos_cluster_unsupported_msg">Бұл көлікте аспаптар тақтасы бір экранды (single-OS) конфигурацияны пайдаланады: оны көлік тікелей сызады, қолданбаларды проекциялауға арналған бөлек экран жоқ. Сондықтан мұнда қолданбаларды панельге проекциялау мүмкін емес — бұл көлігіңіздің аспаптар тақтасының ерекшелігі, DashCast шектеуі емес.</string>
+    <string name="dl3_singleos_cluster_unsupported_msg">Бұл көлікте аспаптар тақтасы бір экранды (single-OS) конфигурацияны пайдаланады: оны көлік тікелей сызады, қолданбаларды проекциялауға арналған бөлек экран жоқ. Сондықтан мұнда қолданбаларды панельге проекциялау мүмкін емес — бұл көлігіңіздің аспаптар тақтасының ерекшелігі, Bydlak Dash шектеуі емес.</string>
     <string name="dl4_cluster_unsupported_title">Аспаптар тақтасына проекцияны микробағдарлама бұғаттады</string>
-    <string name="dl4_cluster_unsupported_msg">Бұл көлікте микробағдарлама DashCast қолданбасына аспаптар тақтасының экранын көруге рұқсат бермейді: қолданба өндіруші экрандарды тізімдеуге рұқсат еткен бағдарламалар тізімінде жоқ. DashCast өзінің артықшылықты көмекшісі арқылы да сұрады, бірақ ол да аспаптар тақтасының экранын таппады. Сондықтан микробағдарламаның осы нұсқасында қолданбаларды аспаптар тақтасына проекциялау мүмкін емес — бұл өндірушінің шектеуі, DashCast шектеуі емес.</string>
+    <string name="dl4_cluster_unsupported_msg">Бұл көлікте микробағдарлама Bydlak Dash қолданбасына аспаптар тақтасының экранын көруге рұқсат бермейді: қолданба өндіруші экрандарды тізімдеуге рұқсат еткен бағдарламалар тізімінде жоқ. Bydlak Dash өзінің артықшылықты көмекшісі арқылы да сұрады, бірақ ол да аспаптар тақтасының экранын таппады. Сондықтан микробағдарламаның осы нұсқасында қолданбаларды аспаптар тақтасына проекциялау мүмкін емес — бұл өндірушінің шектеуі, Bydlak Dash шектеуі емес.</string>
     <!-- HUD diagnostic bug-report — tester-facing result choices (13 locales) -->
     <string name="hud_bench_result_title">Нәтиже — нені көрдің, әрі ҚАЙДА (cluster ме, әлде жел әйнек пе)?</string>
     <string name="hud_bench_opt_cluster">✅ CLUSTER-дегі көрсеткі (рөл артында)</string>
@@ -549,36 +549,36 @@
     <string name="bug_hud_gate_yes">✅ Иә, көрсеткілерді көрсетеді</string>
     <string name="bug_hud_gate_no">❌ Жоқ, ешқашан</string>
     <string name="bug_hud_gate_unknown">❓ Білмеймін</string>
-    <string name="bug_hud_no_arrows_msg">Онда сенің HUD-ыңның микробағдарламасы бұрылыс көрсеткілерін мүлдем көрсете алмайды — DashCast та оларды қоса алмайды. Біздің тарапымыздан түзететін ештеңе жоқ, сондықтан бұл хабарламаны жіберудің қажеті жоқ. Бәрібір рахмет!</string>
+    <string name="bug_hud_no_arrows_msg">Онда сенің HUD-ыңның микробағдарламасы бұрылыс көрсеткілерін мүлдем көрсете алмайды — Bydlak Dash та оларды қоса алмайды. Біздің тарапымыздан түзететін ештеңе жоқ, сондықтан бұл хабарламаны жіберудің қажеті жоқ. Бәрібір рахмет!</string>
     <!-- HUD gate 2 — which nav app the user relies on (v1.6.140) -->
     <string name="bug_hud_nav_title">Навигация үшін қай қолданбаны пайдаланасың?</string>
     <string name="bug_hud_nav_oem">Көлігімнің төл навигациясы</string>
-    <string name="bug_hud_nav_unsupported_msg">DashCast HUD-та жебелерді тек Google Maps не Waze-ден ғана көрсете алады. Көлігіңнің төл навигациясы (Telenav…) деректерін DashCast оқи алмайтын форматта жібереді — бірақ ол HUD-та өзінің жебелерін әлдеқашан көрсетіп тұр. DashCast арқылы жебелер керек болса, Google Maps не Waze-мен маршрут сал.</string>
+    <string name="bug_hud_nav_unsupported_msg">Bydlak Dash HUD-та жебелерді тек Google Maps не Waze-ден ғана көрсете алады. Көлігіңнің төл навигациясы (Telenav…) деректерін Bydlak Dash оқи алмайтын форматта жібереді — бірақ ол HUD-та өзінің жебелерін әлдеқашан көрсетіп тұр. Bydlak Dash арқылы жебелер керек болса, Google Maps не Waze-мен маршрут сал.</string>
     <string name="bug_hud_nav_understood">Түсінікті, Maps не Waze пайдаланамын</string>
     <string name="bug_hud_nav_report_anyway">Есепті бәрібір жіберу</string>
     <!-- HUD gate 3 — no route running (v1.6.143) -->
-    <string name="bug_hud_no_route_msg">Қазір белсенді маршрут жоқ. DashCast бұрылыс нұсқауларын тек навигация маршрут бойынша бағыттап тұрғанда ғана алады: Google Maps немесе Waze қосымшасын жай ашып қою жеткіліксіз. Бір мекенжайға маршрут салып, бағыттауды іске қос, содан соң HUD экранына қара — көрсеткі пайда болуы керек.</string>
+    <string name="bug_hud_no_route_msg">Қазір белсенді маршрут жоқ. Bydlak Dash бұрылыс нұсқауларын тек навигация маршрут бойынша бағыттап тұрғанда ғана алады: Google Maps немесе Waze қосымшасын жай ашып қою жеткіліксіз. Бір мекенжайға маршрут салып, бағыттауды іске қос, содан соң HUD экранына қара — көрсеткі пайда болуы керек.</string>
     <string name="bug_hud_no_route_understood">Түсінікті, маршрут саламын</string>
-    <string name="bug_hud_no_notif_access_msg">DashCast-та хабарландыруларға қатынас жоқ. Бұл — міндетті нәрсе: бұрылыс нұсқаулары Google Maps не Waze хабарландыруынан оқылады. Android параметрлері → Хабарландырулар → Хабарландыруларға қатынасу бөліміне кіріп, DashCast-қа рұқсат бер де, маршрутты қайтадан іске қос.</string>
+    <string name="bug_hud_no_notif_access_msg">Bydlak Dash-та хабарландыруларға қатынас жоқ. Бұл — міндетті нәрсе: бұрылыс нұсқаулары Google Maps не Waze хабарландыруынан оқылады. Android параметрлері → Хабарландырулар → Хабарландыруларға қатынасу бөліміне кіріп, Bydlak Dash-қа рұқсат бер де, маршрутты қайтадан іске қос.</string>
     <string name="hud_sweep_result_title">Шолу аяқталды — КЛАСТЕРДЕ не көрдің?</string>
     <string name="hud_sweep_opt_photographed">📷 Таңбаларды суретке түсірдім</string>
     <string name="hud_sweep_opt_nothing">❌ КЛАСТЕРДЕ ештеңе көрсетілмеді</string>
     <!-- Bug report delivery — pairing. -->
     <string name="pairing_row_title">Қате туралы есептерді жіберу</string>
-    <string name="pairing_state_on">Қосулы — есептеріңіз DashCast тобына жіберіледі</string>
+    <string name="pairing_state_on">Қосулы — есептеріңіз Bydlak Dash тобына жіберіледі</string>
     <string name="pairing_state_off">Өшірулі — есептеріңіз осы құрылғыда қалады</string>
     <!-- Consent to send diagnostics. Shown the first time the user taps Send on a report,
          and re-readable from Settings. The body lists what a report actually contains: it was
          written from a verified inventory of the collection code, not from memory. If what the
          app collects changes, the list changes AND ReportConsent.NOTICE_VERSION goes up. -->
     <string name="pairing_state_on_no_channel">Келісім берілген, бірақ бұл құрылғыда арна бапталмаған</string>
-    <string name="consent_title">Диагностика DashCast тобына жіберілсін бе?</string>
-    <string name="consent_body">Ақаулықты түзету үшін DashCast тобына сол сәтте көлікте не болғанын білу қажет.\n\nЖібермес бұрын DashCast әр есептен VIN нөмірін, Wi-Fi желілерінің атауларын, құрылғылардың аппараттық мекенжайларын және орналасқан жерлерді автоматты түрде алып тастайды.\n\nҚалатыны:\n\n•  DashCast журналы және Android жүйелік журналы, сол күйінде көшіріледі — оларда басқа қолданбалар жазғандары болады, ал ол не екенін біз алдын ала біле алмаймыз;\n\n•  көлік пен басты құрылғы туралы мәліметтер: моделі, нұсқасы, баптаулары, орнатылған қолданбалар;\n\n•  көліктің жергілікті IP-мекенжайы;\n\n•  пішінге жазғаныңыз және өзіңіз көрсеткен Telegram лақап аты;\n\n•  әдепкіде қосулы экран суреттері: орталық экран мен аспаптар панелінің бұлдырланбаған суреттері — оларда баратын жеріңіз көрсетілген карта болуы мүмкін, ал суретті мәтін сияқты сүзуге болмайды. Олар туралы әр жіберу сайын бөлек сұралады.\n\n«Жіберу» түймесін баспайынша, көліктен бірде-бір есеп шықпайды. Есептерді DashCast тобы жабық топта оқиды. DashCast ешқандай аудиожазба, фотосурет, контакт немесе хабарлама жібермейді.\n\nБас тартсаңыз, есеп осы құрылғыда қалады және оны өзіңіз бере аласыз. Шешіміңізді кез келген уақытта баптаулардан өзгертуге болады.</string>
+    <string name="consent_title">Диагностика Bydlak Dash тобына жіберілсін бе?</string>
+    <string name="consent_body">Ақаулықты түзету үшін Bydlak Dash тобына сол сәтте көлікте не болғанын білу қажет.\n\nЖібермес бұрын Bydlak Dash әр есептен VIN нөмірін, Wi-Fi желілерінің атауларын, құрылғылардың аппараттық мекенжайларын және орналасқан жерлерді автоматты түрде алып тастайды.\n\nҚалатыны:\n\n•  Bydlak Dash журналы және Android жүйелік журналы, сол күйінде көшіріледі — оларда басқа қолданбалар жазғандары болады, ал ол не екенін біз алдын ала біле алмаймыз;\n\n•  көлік пен басты құрылғы туралы мәліметтер: моделі, нұсқасы, баптаулары, орнатылған қолданбалар;\n\n•  көліктің жергілікті IP-мекенжайы;\n\n•  пішінге жазғаныңыз және өзіңіз көрсеткен Telegram лақап аты;\n\n•  әдепкіде қосулы экран суреттері: орталық экран мен аспаптар панелінің бұлдырланбаған суреттері — оларда баратын жеріңіз көрсетілген карта болуы мүмкін, ал суретті мәтін сияқты сүзуге болмайды. Олар туралы әр жіберу сайын бөлек сұралады.\n\n«Жіберу» түймесін баспайынша, көліктен бірде-бір есеп шықпайды. Есептерді Bydlak Dash тобы жабық топта оқиды. Bydlak Dash ешқандай аудиожазба, фотосурет, контакт немесе хабарлама жібермейді.\n\nБас тартсаңыз, есеп осы құрылғыда қалады және оны өзіңіз бере аласыз. Шешіміңізді кез келген уақытта баптаулардан өзгертуге болады.</string>
     <string name="consent_accept">Келісемін</string>
     <string name="consent_refuse">Бас тарту</string>
     <string name="consent_revoke">Кері қайтару</string>
     <string name="consent_close">Жабу</string>
-    <string name="consent_result_granted">Рақмет. Есептеріңіз DashCast тобына жіберіледі.</string>
+    <string name="consent_result_granted">Рақмет. Есептеріңіз Bydlak Dash тобына жіберіледі.</string>
     <string name="consent_result_refused">Бас тартылды. Есептеріңіз осы құрылғыда қалады.</string>
     <string name="consent_result_revoked">Келісім кері қайтарылды. Есептеріңіз осы құрылғыда қалады.</string>
     <string name="bug_kept_locally_fmt">Есеп осы құрылғыда сақталды: %1$s. Оны қалай жіберетініңізді таңдаңыз.</string>

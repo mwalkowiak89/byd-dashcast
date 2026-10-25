@@ -1,8 +1,10 @@
 package com.byd.dashcast.update
 
+import com.byd.dashcast.proxy.AppIdentity
+
 /** Builds the uid-2000 staging, install, and relaunch shell transaction. */
 object OtaInstallCommand {
-    private const val STAGED_APK = "/data/local/tmp/dashcast-ota-update.apk"
+    private val STAGED_APK = AppIdentity.tmp("-ota-update.apk")
 
     @JvmStatic
     fun build(sourcePath: String?, expectedSize: Long, packageName: String?,

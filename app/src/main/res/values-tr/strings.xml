@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">DashCast</string>
+    <string name="app_name">Bydlak Dash</string>
     <string name="welcome_subtitle">Gösterge paneli denetleyicisi</string>
     <string name="welcome_subtitle_fmt">BYD CLUSTER MIRROR · v%1$s</string>
     <string name="welcome_select_lang">Choisissez votre langue\nPlease select your language</string>
@@ -66,7 +66,7 @@
     <string name="settings_header">Ayarlar</string>
     <string name="settings_cluster_type_title">Küme tipi</string>
     <string name="ota_dialog_title">Güncelleme mevcut</string>
-    <string name="ota_up_to_date">DashCast güncel</string>
+    <string name="ota_up_to_date">Bydlak Dash güncel</string>
     <string name="btn_adjust">Ayarla</string>
     <string name="toast_grid_mode_enabled">Izgara Modu Etkin</string>
     <string name="toast_list_mode_enabled">Liste Modu Etkin</string>
@@ -177,7 +177,7 @@
     <string name="sysinfo_section_full_report">Tam rapor</string>
     <string name="sysinfo_tile_vehicle">Araç</string>
     <string name="sysinfo_tile_android">Android</string>
-    <string name="sysinfo_tile_dashcast">DashCast</string>
+    <string name="sysinfo_tile_dashcast">Bydlak Dash</string>
     <string name="sysinfo_tile_uptime">Çalışma süresi</string>
     <string name="sysinfo_tile_uptime_since">%1$s\'den beri</string>
     <string name="sysinfo_disp_main">Ana</string>
@@ -216,20 +216,20 @@
 
     <!-- ═══════════════ DiLink 5 — Dedicated diagnostic (v1.1.0-beta2) ═══════════════ -->
     <!-- v1.2.10 — IME a11y onboarding banner (DL5) -->
-    <string name="a11y_ime_watcher_label">Küme otomatik klavyesi (DashCast)</string>
+    <string name="a11y_ime_watcher_label">Küme otomatik klavyesi (Bydlak Dash)</string>
     <string name="a11y_ime_watcher_summary">Küme ekranındaki bir metin alanına dokunduğunuzda köprü klavyesini gösterir.</string>
-    <string name="a11y_ime_watcher_description">DashCast\'in klavye köprüsünü otomatik açmak için küme ekranındaki odak olaylarını izler. Alan içeriğini okumaz veya saklamaz.</string>
+    <string name="a11y_ime_watcher_description">Bydlak Dash\'in klavye köprüsünü otomatik açmak için küme ekranındaki odak olaylarını izler. Alan içeriğini okumaz veya saklamaz.</string>
     <string name="ime_banner_title">Kümede otomatik klavye</string>
-    <string name="ime_banner_body">Bu araçta (DiLink 5) sistem klavyesi kümede görüntülenemez. Bir metin alanına dokunduğunuzda DashCast\'in klavye köprüsünü otomatik açması için erişilebilirlik hizmetini etkinleştirin. Aksi takdirde aynadaki ⌨ düğmesini kullanın.</string>
+    <string name="ime_banner_body">Bu araçta (DiLink 5) sistem klavyesi kümede görüntülenemez. Bir metin alanına dokunduğunuzda Bydlak Dash\'in klavye köprüsünü otomatik açması için erişilebilirlik hizmetini etkinleştirin. Aksi takdirde aynadaki ⌨ düğmesini kullanın.</string>
     <string name="ime_banner_btn_enable">Etkinleştir</string>
     <string name="ime_banner_btn_later">Sonra</string>
     <string name="ime_banner_btn_dismiss">Bir daha gösterme</string>
     <string name="ime_banner_toast_enabled">Otomatik klavye aktif ✓</string>
     <string name="ime_banner_toast_cannot_open_settings">Ayarlar açılamadı — « Küme otomatik klavyesi » erişilebilirlik hizmetini elle etkinleştirin.</string>
     <string name="hud_notif_banner_title">HUD Navigasyon — Bildirim erişimi gerekli</string>
-    <string name="hud_notif_banner_body">DashCast, navigasyon talimatlarını küme ekranında göstermek için bildirim erişimine ihtiyaç duyar. Ayarlar → Özel uygulama erişimi → Bildirim erişimi → DashCast yolundan etkinleştirin.</string>
+    <string name="hud_notif_banner_body">Bydlak Dash, navigasyon talimatlarını küme ekranında göstermek için bildirim erişimine ihtiyaç duyar. Ayarlar → Özel uygulama erişimi → Bildirim erişimi → Bydlak Dash yolundan etkinleştirin.</string>
     <string name="hud_notif_banner_toast_enabled">Bildirim erişimi verildi ✓</string>
-    <string name="keyboard_bridge_a11y_required_toast">Klavyenin gösterge panelinde çalışması için Ayarlar → Erişilebilirlik bölümünden « DashCast Cluster IME »\'yi etkinleştirin.</string>
+    <string name="keyboard_bridge_a11y_required_toast">Klavyenin gösterge panelinde çalışması için Ayarlar → Erişilebilirlik bölümünden « Bydlak Dash Cluster IME »\'yi etkinleştirin.</string>
     <string name="btn_keyboard">⌨</string>
     <string name="btn_keyboard_desc">Klavye</string>
     <string name="keyboard_bridge_title">Uzaktan klavye</string>
@@ -238,7 +238,7 @@
 
     <!-- v1.2.28 i18n full: ADAS / Sniffer / Settings warnings -->
     <string name="settings_no_browser_fmt">%1$s\'yi açacak tarayıcı yok</string>
-    <string name="keyboard_bridge_active_toast">DashCast Cluster IME ✓</string>
+    <string name="keyboard_bridge_active_toast">Bydlak Dash Cluster IME ✓</string>
     <string name="sysinfo_restart_action">Yeniden başlat</string>
     <string name="sysinfo_restart_started">Yeniden başlatılıyor…</string>
     <string name="sysinfo_restart_failed">Yeniden başlatma başarısız</string>
@@ -262,7 +262,7 @@
     <string name="hotspot_back">Geri</string>
     <string name="hotspot_hero_title">TetherFi ile 4G ortak erişim noktası</string>
     <string name="hotspot_hero_subtitle">Mobil verinizi birkaç dokunuşla paylaşın</string>
-    <string name="hotspot_intro">Yerleşik ortak erişim noktası DiLink 3\'te erişilebilir değil. Bunun yerine DashCast, sistem izni gerektirmeden Wi-Fi Direct erişim noktası + SOCKS5 proxy oluşturan TetherFi\'yi (açık kaynak) kullanır ve aracınızın SIM kartı üst bağlantı olarak kullanılır.</string>
+    <string name="hotspot_intro">Yerleşik ortak erişim noktası DiLink 3\'te erişilebilir değil. Bunun yerine Bydlak Dash, sistem izni gerektirmeden Wi-Fi Direct erişim noktası + SOCKS5 proxy oluşturan TetherFi\'yi (açık kaynak) kullanır ve aracınızın SIM kartı üst bağlantı olarak kullanılır.</string>
     <string name="hotspot_tf_status_unknown">⏳ Algılanıyor…</string>
     <string name="hotspot_tf_status_installed">🟢 TetherFi yüklü — sürüm %1$s</string>
     <string name="hotspot_tf_status_missing">🔴 TetherFi yüklü değil. En son sürümü almak için «Yükle» öğesine dokunun.</string>
@@ -296,7 +296,7 @@
     <string name="settings_use_own_sim_support">Mobil verinizi TetherFi ile paylaşabilmeniz için gezinme çubuğunda «Ortak erişim» düğmesini gösterir (yalnızca DiLink 3).</string>
     <string name="proxy_keeper_channel_name">Proxy daemon</string>
     <string name="proxy_keeper_channel_desc">Proxy daemon\'ı arka planda kullanılabilir tutar</string>
-    <string name="proxy_keeper_notif_title">DashCast — proxy aktif</string>
+    <string name="proxy_keeper_notif_title">Bydlak Dash — proxy aktif</string>
     <string name="proxy_keeper_notif_text">Daemon her 10 saniyede kontrol edilir</string>
     <!-- v1.2.76 — Reboot button + dialog -->
     <string name="sysinfo_btn_reboot">Yeniden başlat</string>
@@ -334,7 +334,7 @@
     <string name="fission_slot_pkg_none">Yok — serbest bölge</string>
     <string name="fission_slot_zone_bound_fmt">Bağlı uygulama: %1$s</string>
     <string name="settings_fission_auto_layout">Otomatik favori düzen</string>
-    <string name="settings_fission_auto_layout_support">DashCast başlatıldığında: küme projeksiyonunu ve favori düzeni etkinleştirir, bağlı uygulamaları başlatır</string>
+    <string name="settings_fission_auto_layout_support">Bydlak Dash başlatıldığında: küme projeksiyonunu ve favori düzeni etkinleştirir, bağlı uygulamaları başlatır</string>
     <string name="settings_fission_precreate_slots">Slotları başlangıçta önceden oluştur</string>
     <string name="settings_fission_precreate_slots_support">Fission açıldığında favori düzenin Virtual Display\'lerini hazırlar (uygulamaları başlatmadan)</string>
     <string name="sysinfo_disp_hidden">Gizli (PRIVATE)</string>
@@ -346,10 +346,10 @@
     <string name="fo_err_attach_fmt">%1$s için slot oluşturulamadı</string>
     <string name="fo_err_daemon">Daemon kullanılamıyor</string>
     <string name="fo_err_proxy">Proxy ADB Daemon bağlı değil. Ayarlardan etkinleştirin.</string>
-    <string name="adb_transport_unresponsive">ADB bağlantıyı kabul ediyor ancak komutlara yanıt vermiyor. Android hata ayıklamayı (adbd) yeniden başlatın ve DashCast’i tekrar açın.</string>
-    <string name="adb_transport_key_unauthorized">ADB erişilebilir, ancak DashCast anahtarı yetkilendirilmemiş. «USB hata ayıklamasına izin ver» istemini «Her zaman izin ver» ile kabul edin ve DashCast’i yeniden açın.</string>
-    <string name="adb_transport_unreachable">Bu araçta TCP üzerinden ADB erişilebilir değil. 5555 bağlantı noktasında TCP üzerinden Android hata ayıklamayı etkinleştirin ve DashCast’i yeniden açın.</string>
-    <string name="adb_transport_handshake">ADB el sıkışması geçici olarak başarısız oldu. DashCast otomatik olarak yeniden deneyecek.</string>
+    <string name="adb_transport_unresponsive">ADB bağlantıyı kabul ediyor ancak komutlara yanıt vermiyor. Android hata ayıklamayı (adbd) yeniden başlatın ve Bydlak Dash’i tekrar açın.</string>
+    <string name="adb_transport_key_unauthorized">ADB erişilebilir, ancak Bydlak Dash anahtarı yetkilendirilmemiş. «USB hata ayıklamasına izin ver» istemini «Her zaman izin ver» ile kabul edin ve Bydlak Dash’i yeniden açın.</string>
+    <string name="adb_transport_unreachable">Bu araçta TCP üzerinden ADB erişilebilir değil. 5555 bağlantı noktasında TCP üzerinden Android hata ayıklamayı etkinleştirin ve Bydlak Dash’i yeniden açın.</string>
+    <string name="adb_transport_handshake">ADB el sıkışması geçici olarak başarısız oldu. Bydlak Dash otomatik olarak yeniden deneyecek.</string>
     <string name="fo_status_autoactivate">Düzen otomatik etkinleştiriliyor…</string>
     <string name="fo_status_autolayout_err_fmt">Otomatik düzen hatası: %1$s</string>
     <string name="fo_status_create_fmt">%1$s için slot oluşturuluyor…</string>
@@ -411,7 +411,7 @@
     <string name="bug_status_slow">Gönderme beklenenden uzun sürüyor — iptal edebilirsiniz.</string>
     <string name="bug_status_error_fmt">Hata: %1$s</string>
     <string name="bug_sent_ok">Rapor gönderildi ✓ Teşekkürler!</string>
-    <string name="bug_share_subject">DashCast — Hata raporu</string>
+    <string name="bug_share_subject">Bydlak Dash — Hata raporu</string>
     <string name="bug_share_chooser">Raporu şununla gönder…</string>
 
     <!-- Bug Wizard (keyboard-free, 3-step) -->
@@ -477,7 +477,7 @@
     <string-array name="bug_issues_freeze">
         <item>Uygulama çöktü</item>
         <item>Ekran dondu</item>
-        <item>DashCast çöktü</item>
+        <item>Bydlak Dash çöktü</item>
         <item>Araba ekranı siyah</item>
         <item>Yeniden başlatmak zorunda kaldı</item>
         <item>Projeksiyon durunca yavaş</item>
@@ -508,11 +508,11 @@
     <string name="bug_wizard_selected_fmt">Seçildi: %1$s</string>
     <string name="toast_adb_port_refused">ADB\'ye erişilemiyor (bağlantı noktası 5555) — bu cihazda ayna kullanılamıyor</string>
     <string name="aaos_cluster_unsupported_title">Gösterge paneli yansıtması engellendi</string>
-    <string name="aaos_cluster_unsupported_msg">Aracınız BYD\'nin Android Automotive sistemini (DX_BYD_AUTO) kullanıyor. Bu ünitede gösterge paneli üretici tarafından kilitlenmiştir: BYD bunu yerleşik navigasyona ayırır ve uygulama yansıtmasını engeller. Bu, aracın bir kısıtlamasıdır (DashCast\'in değil) — bir geçici çözüm yoktur.</string>
+    <string name="aaos_cluster_unsupported_msg">Aracınız BYD\'nin Android Automotive sistemini (DX_BYD_AUTO) kullanıyor. Bu ünitede gösterge paneli üretici tarafından kilitlenmiştir: BYD bunu yerleşik navigasyona ayırır ve uygulama yansıtmasını engeller. Bu, aracın bir kısıtlamasıdır (Bydlak Dash\'in değil) — bir geçici çözüm yoktur.</string>
     <string name="dl3_singleos_cluster_unsupported_title">Gösterge paneli yansıtması kullanılamıyor</string>
-    <string name="dl3_singleos_cluster_unsupported_msg">Bu araçta gösterge paneli tek ekranlı (single-OS) bir düzen kullanır: doğrudan araç tarafından çizilir ve uygulamaların yansıtılabileceği ayrı bir ekran yoktur. Gösterge paneline uygulama yansıtma burada mümkün değildir — bu, aracınızın gösterge panelinin bir özelliğidir, DashCast\'in bir kısıtlaması değildir.</string>
+    <string name="dl3_singleos_cluster_unsupported_msg">Bu araçta gösterge paneli tek ekranlı (single-OS) bir düzen kullanır: doğrudan araç tarafından çizilir ve uygulamaların yansıtılabileceği ayrı bir ekran yoktur. Gösterge paneline uygulama yansıtma burada mümkün değildir — bu, aracınızın gösterge panelinin bir özelliğidir, Bydlak Dash\'in bir kısıtlaması değildir.</string>
     <string name="dl4_cluster_unsupported_title">Gösterge paneli yansıtması ürün yazılımı tarafından engellendi</string>
-    <string name="dl4_cluster_unsupported_msg">Bu araçta ürün yazılımı DashCast\'in gösterge paneli ekranını görmesine izin vermiyor: uygulama, üreticinin ekranları listelemesine izin verdiği programlar listesinde yer almıyor. DashCast ayrıca ayrıcalıklı yardımcısı üzerinden de sordu; o da bir gösterge paneli ekranı bulamadı. Bu nedenle bu ürün yazılımı sürümünde uygulamaların gösterge paneline yansıtılması mümkün değil — bu bir üretici kısıtlamasıdır, DashCast sınırlaması değil.</string>
+    <string name="dl4_cluster_unsupported_msg">Bu araçta ürün yazılımı Bydlak Dash\'in gösterge paneli ekranını görmesine izin vermiyor: uygulama, üreticinin ekranları listelemesine izin verdiği programlar listesinde yer almıyor. Bydlak Dash ayrıca ayrıcalıklı yardımcısı üzerinden de sordu; o da bir gösterge paneli ekranı bulamadı. Bu nedenle bu ürün yazılımı sürümünde uygulamaların gösterge paneline yansıtılması mümkün değil — bu bir üretici kısıtlamasıdır, Bydlak Dash sınırlaması değil.</string>
     <!-- HUD diagnostic bug-report — tester-facing result choices (13 locales) -->
     <string name="hud_bench_result_title">Sonuç — ne gördün ve NEREDE (CLUSTER mı yoksa ön cam mı)?</string>
     <string name="hud_bench_opt_cluster">✅ CLUSTER\'da ok (direksiyonun arkasında)</string>
@@ -549,36 +549,36 @@
     <string name="bug_hud_gate_yes">✅ Evet, okları gösteriyor</string>
     <string name="bug_hud_gate_no">❌ Hayır, asla</string>
     <string name="bug_hud_gate_unknown">❓ Bilmiyorum</string>
-    <string name="bug_hud_no_arrows_msg">O halde HUD\'unun ürün yazılımı dönüş oklarını hiç gösteremiyor demektir — DashCast da onları ekleyemez. Bizim tarafımızda düzeltebileceğimiz bir şey yok, bu yüzden bu raporu göndermene gerek yok. Yine de teşekkürler!</string>
+    <string name="bug_hud_no_arrows_msg">O halde HUD\'unun ürün yazılımı dönüş oklarını hiç gösteremiyor demektir — Bydlak Dash da onları ekleyemez. Bizim tarafımızda düzeltebileceğimiz bir şey yok, bu yüzden bu raporu göndermene gerek yok. Yine de teşekkürler!</string>
     <!-- HUD gate 2 — which nav app the user relies on (v1.6.140) -->
     <string name="bug_hud_nav_title">Navigasyon için hangi uygulamayı kullanıyorsun?</string>
     <string name="bug_hud_nav_oem">Arabamın orijinal navigasyonu</string>
-    <string name="bug_hud_nav_unsupported_msg">DashCast, HUD\'daki okları yalnızca Google Maps veya Waze\'den yansıtabilir. Arabanın orijinal navigasyonu (Telenav…) verilerini DashCast\'in okuyamadığı bir formatta gönderiyor — ama zaten HUD\'da kendi oklarını gösteriyor. DashCast üzerinden ok görmek için Google Maps veya Waze ile yol tarifi başlat.</string>
+    <string name="bug_hud_nav_unsupported_msg">Bydlak Dash, HUD\'daki okları yalnızca Google Maps veya Waze\'den yansıtabilir. Arabanın orijinal navigasyonu (Telenav…) verilerini Bydlak Dash\'in okuyamadığı bir formatta gönderiyor — ama zaten HUD\'da kendi oklarını gösteriyor. Bydlak Dash üzerinden ok görmek için Google Maps veya Waze ile yol tarifi başlat.</string>
     <string name="bug_hud_nav_understood">Anladım, Maps veya Waze kullanacağım</string>
     <string name="bug_hud_nav_report_anyway">Raporu yine de gönder</string>
     <!-- HUD gate 3 — no route running (v1.6.143) -->
-    <string name="bug_hud_no_route_msg">Şu anda aktif bir rota yok. DashCast dönüş yönlerini yalnızca navigasyon aktif olarak yol tarifi verirken alır; Google Maps veya Waze\'i açmış olman yeterli değil. Bir hedefe rota başlat, sonra HUD\'a bak — okun belirmesi gerekir.</string>
+    <string name="bug_hud_no_route_msg">Şu anda aktif bir rota yok. Bydlak Dash dönüş yönlerini yalnızca navigasyon aktif olarak yol tarifi verirken alır; Google Maps veya Waze\'i açmış olman yeterli değil. Bir hedefe rota başlat, sonra HUD\'a bak — okun belirmesi gerekir.</string>
     <string name="bug_hud_no_route_understood">Anladım, bir rota başlatacağım</string>
-    <string name="bug_hud_no_notif_access_msg">DashCast\'ın bildirim erişimi yok. Bu şart: dönüş yönleri Google Maps veya Waze bildiriminden okunuyor. Android Ayarlar → Bildirimler → Bildirim erişimi bölümüne gidip DashCast\'a izin ver, sonra rotayı yeniden başlat.</string>
+    <string name="bug_hud_no_notif_access_msg">Bydlak Dash\'ın bildirim erişimi yok. Bu şart: dönüş yönleri Google Maps veya Waze bildiriminden okunuyor. Android Ayarlar → Bildirimler → Bildirim erişimi bölümüne gidip Bydlak Dash\'a izin ver, sonra rotayı yeniden başlat.</string>
     <string name="hud_sweep_result_title">Tarama bitti — CLUSTER\'da ne gördün?</string>
     <string name="hud_sweep_opt_photographed">📷 Simgelerin fotoğrafını çektim</string>
     <string name="hud_sweep_opt_nothing">❌ Cluster\'da hiçbir şey görünmedi</string>
     <!-- Bug report delivery — pairing. -->
     <string name="pairing_row_title">Hata raporlarının gönderimi</string>
-    <string name="pairing_state_on">Açık — raporların DashCast ekibine gönderiliyor</string>
+    <string name="pairing_state_on">Açık — raporların Bydlak Dash ekibine gönderiliyor</string>
     <string name="pairing_state_off">Kapalı — raporların bu cihazda kalıyor</string>
     <!-- Consent to send diagnostics. Shown the first time the user taps Send on a report,
          and re-readable from Settings. The body lists what a report actually contains: it was
          written from a verified inventory of the collection code, not from memory. If what the
          app collects changes, the list changes AND ReportConsent.NOTICE_VERSION goes up. -->
     <string name="pairing_state_on_no_channel">Kabul edildi, ancak bu cihazda yapılandırılmış bir kanal yok</string>
-    <string name="consent_title">Tanılama verileri DashCast ekibine gönderilsin mi?</string>
-    <string name="consent_body">Bir sorunu düzeltmek için DashCast ekibinin, o anda araçta neler olduğunu bilmesi gerekir.\n\nGöndermeden önce DashCast her rapordan şasi numarasını (VIN), Wi-Fi ağ adlarını, cihazların donanım adreslerini ve konumları otomatik olarak çıkarır.\n\nGeriye kalanlar:\n\n•  DashCast günlüğü ve Android sistem günlüğü, olduğu gibi kopyalanır — diğer uygulamaların yazdıklarını içerir ve bunun ne olduğunu önceden bilemeyiz;\n\n•  araç ve ana ünite bilgileri: model, sürüm, ayarlar, kurulu uygulamalar;\n\n•  aracın yerel IP adresi;\n\n•  forma yazdıkların ve verdiğin Telegram kullanıcı adı;\n\n•  varsayılan olarak açık olan ekran görüntüleri: ana ekranın ve gösterge panelinin bulanıklaştırılmamış görüntüleri; bunlarda gideceğin yeri gösteren bir harita görünebilir — bir görüntü, metin gibi süzülemez. Bunlar her gönderimde ayrıca sorulur.\n\n“Gönder”e dokunmadan hiçbir rapor araçtan çıkmaz. Raporları DashCast ekibi özel bir grupta okur. DashCast hiçbir ses kaydı, fotoğraf, kişi veya mesaj göndermez.\n\nReddedersen rapor bu cihazda kalır ve dilersen kendin paylaşırsın. Fikrini istediğin zaman Ayarlar\'dan değiştirebilirsin.</string>
+    <string name="consent_title">Tanılama verileri Bydlak Dash ekibine gönderilsin mi?</string>
+    <string name="consent_body">Bir sorunu düzeltmek için Bydlak Dash ekibinin, o anda araçta neler olduğunu bilmesi gerekir.\n\nGöndermeden önce Bydlak Dash her rapordan şasi numarasını (VIN), Wi-Fi ağ adlarını, cihazların donanım adreslerini ve konumları otomatik olarak çıkarır.\n\nGeriye kalanlar:\n\n•  Bydlak Dash günlüğü ve Android sistem günlüğü, olduğu gibi kopyalanır — diğer uygulamaların yazdıklarını içerir ve bunun ne olduğunu önceden bilemeyiz;\n\n•  araç ve ana ünite bilgileri: model, sürüm, ayarlar, kurulu uygulamalar;\n\n•  aracın yerel IP adresi;\n\n•  forma yazdıkların ve verdiğin Telegram kullanıcı adı;\n\n•  varsayılan olarak açık olan ekran görüntüleri: ana ekranın ve gösterge panelinin bulanıklaştırılmamış görüntüleri; bunlarda gideceğin yeri gösteren bir harita görünebilir — bir görüntü, metin gibi süzülemez. Bunlar her gönderimde ayrıca sorulur.\n\n“Gönder”e dokunmadan hiçbir rapor araçtan çıkmaz. Raporları Bydlak Dash ekibi özel bir grupta okur. Bydlak Dash hiçbir ses kaydı, fotoğraf, kişi veya mesaj göndermez.\n\nReddedersen rapor bu cihazda kalır ve dilersen kendin paylaşırsın. Fikrini istediğin zaman Ayarlar\'dan değiştirebilirsin.</string>
     <string name="consent_accept">Kabul et</string>
     <string name="consent_refuse">Reddet</string>
     <string name="consent_revoke">Geri al</string>
     <string name="consent_close">Kapat</string>
-    <string name="consent_result_granted">Teşekkürler. Raporların DashCast ekibine gönderilecek.</string>
+    <string name="consent_result_granted">Teşekkürler. Raporların Bydlak Dash ekibine gönderilecek.</string>
     <string name="consent_result_refused">Reddedildi. Raporların bu cihazda kalacak.</string>
     <string name="consent_result_revoked">Geri alındı. Raporların bu cihazda kalacak.</string>
     <string name="bug_kept_locally_fmt">Rapor bu cihazda saklandı: %1$s. Nasıl ileteceğini seç.</string>

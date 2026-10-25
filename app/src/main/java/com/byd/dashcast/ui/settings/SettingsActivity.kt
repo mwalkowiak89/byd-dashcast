@@ -107,7 +107,7 @@ class SettingsActivity : AppCompatActivity() {
 
         // "Code source" row — opens the GitHub repository.
         val rowSourceCode: View? = findViewById(R.id.row_source_code)
-        rowSourceCode?.setOnClickListener { openUrl("https://github.com/Kiroha/byd-dashcast") }
+        rowSourceCode?.setOnClickListener { openUrl("https://github.com/${com.byd.dashcast.proxy.AppIdentity.UPDATE_REPO}") }
 
         // Bug report delivery — where the answer is visible, and where it can be changed.
         findViewById<View>(R.id.row_report_channel)?.setOnClickListener { showConsentDialog() }
