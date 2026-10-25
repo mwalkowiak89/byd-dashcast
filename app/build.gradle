@@ -2022,6 +2022,15 @@ android {
         jvmTarget = '17'
     }
 
+    // Build with JDK 17 whatever JAVA_HOME points at. Unit tests run on the desktop JVM, and from
+    // JDK 19 on `` in java.util.regex is ASCII-only, unlike ART/ICU on the car: on a newer JDK
+    // the Cyrillic/Arabic nav-parser tests fail although the device parses fine.
+    tasks.withType(Test).configureEach {
+        javaLauncher = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
 
     // PRE-0 (audit) — Robolectric needs the merged resources and the manifest on the unit-test
     // classpath. Nothing else changes: the 232 existing plain-JUnit tests never touch an Android
@@ -2139,4 +2148,9 @@ dependencies {
     // internal ART structures, unlike the hand-rolled meta-reflection trick this replaces — which
     // this library's own README warns "will be blocked"). Apache 2.0.
     implementation 'org.lsposed.hiddenapibypass:hiddenapibypass:6.1'
+}
+
+kotlin {
+    // Also sets the Java compile toolchain; see the JDK note above the Test task block.
+    jvmToolchain(17)
 }
