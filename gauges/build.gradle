@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+// The package id is derived from :app, so the fork identity lives in one place
+// (app/build.gradle `forkApplicationId`) and this APK always sits under it as `<id>.gauges`.
+evaluationDependsOn(':app')
+def hostApplicationId = project(':app').android.defaultConfig.applicationId
+
+android {
+    // Same conditional platform signing as :app (AUD-156). The keystore is gitignored; without it
+    // the APK is debug-signed, installs and runs in simulation, and the bydauto APIs are denied.
+    def platformKeystore = file('../app/keystore/platform.keystore')
+    def hasPlatformKeystore = platformKeystore.exists()
+    if (!hasPlatformKeystore) {
+        logger.quiet("Gauges: app/keystore/platform.keystore is absent. Debug and release are "
+                + "signed with Gradle's DEBUG key, the release APK is renamed -debugsigned, and "
+                + "the bydauto vehicle APIs are denied at runtime (simulation still works).")
+    }
+
+    signingConfigs {
+        if (hasPlatformKeystore) {
+            bydPlatform {
+                keyAlias 'androiddebugkey'
+                keyPassword 'android'
+                storeFile platformKeystore
+                storePassword 'android'
+            }
+        }
+    }
+
+    namespace = "com.byd.dashcast.gauges"
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId hostApplicationId + '.gauges'
+        buildConfigField 'String', 'HOST_PACKAGE', "\"${hostApplicationId}\""
+        minSdkVersion 28
+        targetSdkVersion 29
+        versionCode 1
+        versionName "0.1.0"
+    }
+
+    buildTypes {
+        debug {
+            if (hasPlatformKeystore) signingConfig = signingConfigs.bydPlatform
+        }
+        release {
+            minifyEnabled false
+            signingConfig = hasPlatformKeystore ? signingConfigs.bydPlatform : signingConfigs.debug
+        }
+    }
+
+    buildFeatures {
+        buildConfig = true
+    }
+
+    lint {
+        abortOnError = false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    tasks.withType(Test).configureEach {
+        javaLauncher = javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(17)
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def suffix = (!hasPlatformKeystore && variant.buildType.name == 'release') ? '-debugsigned' : ''
+            outputFileName = "BydlakGauges-v${variant.versionName}-${variant.buildType.name}${suffix}.apk"
+        }
+    }
+}
+
+dependencies {
+    // BYD vehicle API stubs: compile-time only, the real classes are in the head unit's framework.
+    // Unit tests deliberately run WITHOUT them, which is the "class missing" case on any non-BYD device.
+    compileOnly files('../app/libs/byd-auto-api-stubs.jar')
+    testCompileOnly files('../app/libs/byd-auto-api-stubs.jar')
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.13'
+}
+
+kotlin {
+    jvmToolchain(17)
+}

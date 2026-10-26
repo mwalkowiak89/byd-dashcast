@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A generic gauge: arc, red zone and needle. No brand marks. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M33,71 A26,26 0 1,1 75,71"
+        android:strokeColor="#F2F2F2"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M78.6,56.5 A26,26 0 0,1 75,71"
+        android:strokeColor="#E10600"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"/>
+    <path
+        android:pathData="M52,57 L71,38 L56,61 Z"
+        android:fillColor="#FFD100"/>
+    <path
+        android:pathData="M54,59 m-4,0 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0"
+        android:fillColor="#FFD100"/>
+</vector>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gauges</string>
+    <string name="editor_name">Gauges – edytor</string>
+    <string name="simulation_badge">SYMULACJA</string>
+
+    <string name="action_new">Nowy</string>
+    <string name="action_open">Otwórz preset</string>
+    <string name="action_save">Zapisz</string>
+    <string name="action_export">Eksport</string>
+    <string name="action_import">Import</string>
+    <string name="action_undo">Cofnij</string>
+    <string name="action_redo">Ponów</string>
+    <string name="action_preview">Podgląd (symulacja jazdy)</string>
+    <string name="action_preview_stop">Zatrzymaj podgląd</string>
+    <string name="action_show_on_cluster">Pokaż na zegarach</string>
+    <string name="action_add_widget">Dodaj widget</string>
+    <string name="action_set_active">Ustaw aktywny</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="action_duplicate">Duplikuj</string>
+    <string name="action_delete">Usuń</string>
+    <string name="action_forward">Wyżej</string>
+    <string name="action_backward">Niżej</string>
+    <string name="action_front">Na wierzch</string>
+    <string name="action_back">Na spód</string>
+
+    <string name="marker_active">aktywny na zegarach</string>
+    <string name="new_layout_name">Nowy układ</string>
+    <string name="confirm_discard">Odrzucić niezapisane zmiany?</string>
+    <string name="discard">Odrzuć</string>
+    <string name="kind_preset">Preset</string>
+    <string name="kind_user">Mój</string>
+    <string name="save_as_title">Zapisz układ jako</string>
+    <string name="saved">Zapisano</string>
+    <string name="saved_and_active">Zapisano i ustawiono jako układ zegarów</string>
+    <string name="exported">Wyeksportowano</string>
+    <string name="pick_signal">Sygnał</string>
+    <string name="cannot_save_title">Tego układu nie można jeszcze użyć</string>
+    <string name="error_open">Nie udało się otworzyć układu: %1$s</string>
+    <string name="error_save">Nie udało się zapisać: %1$s</string>
+    <string name="error_export">Nie udało się wyeksportować: %1$s</string>
+    <string name="error_import">Nie udało się zaimportować: %1$s</string>
+
+    <string name="issue_no_speed">Ze względów bezpieczeństwa zegary muszą zawsze pokazywać prędkość: dodaj widoczny widget z sygnałem SPEED (tarcza, łuk, pasek lub liczba) o rozmiarze co najmniej %1$d×%2$d px.</string>
+    <string name="issue_out_of_canvas">Widget „%1$s” wychodzi poza krawędź ekranu. Przesuń go albo zmniejsz.</string>
+    <string name="issue_duplicate_id">Dwa widgety mają ten sam identyfikator „%1$s”.</string>
+
+    <string name="show_on_cluster_help">Projekcję na zegary robi Bydlak Dash, nie ta aplikacja.\n\n1. Ustaw ten układ jako aktywny („Ustaw aktywny”).\n2. Otwórz Bydlak Dash (%2$s) i na liście aplikacji dla zegarów wybierz „Gauges” (%1$s).\n\nDashboard sam przeładuje się po zmianie aktywnego układu.</string>
+    <string name="open_host">Otwórz Bydlak Dash</string>
+    <string name="open_fullscreen">Pełny ekran tutaj</string>
+
+    <string name="setting_simulation">Symulacja (zamiast danych z auta)</string>
+    <string name="setting_simulation_hint">Dane symulowane są oznaczone na zegarach napisem SYMULACJA.</string>
+    <string name="setting_night">Tryb nocny</string>
+    <string name="setting_night_dim">Przyciemnienie nocne: %1$d %%</string>
+
+    <string name="panel_layout">Układ</string>
+    <string name="panel_hint_select">Dotknij widgetu na podglądzie, żeby go edytować. Przeciągnij, by przesunąć; przeciągnij róg, by zmienić rozmiar. Krawędzie przyciągają się do siatki 8 px i do innych widgetów.</string>
+    <string name="panel_theme">Motyw</string>
+    <string name="panel_scale">Skala</string>
+    <string name="panel_colors">Kolory</string>
+    <string name="panel_arrange">Kolejność</string>
+    <string name="hint_sweep">Kąty w stopniach, 0 = godzina 3, przeciwnie do ruchu wskazówek. Ujemny zakres odwraca skalę.</string>
+    <string name="color_auto">Auto</string>
+
+    <string name="prop_name">Nazwa</string>
+    <string name="prop_background">Tło</string>
+    <string name="prop_foreground">Pierwszy plan</string>
+    <string name="prop_accent">Akcent</string>
+    <string name="prop_warning">Ostrzeżenie</string>
+    <string name="prop_font">Czcionka</string>
+    <string name="prop_signal">Sygnał</string>
+    <string name="prop_x">X</string>
+    <string name="prop_y">Y</string>
+    <string name="prop_w">Szerokość</string>
+    <string name="prop_h">Wysokość</string>
+    <string name="prop_visible">Widoczny</string>
+    <string name="prop_text">Tekst</string>
+    <string name="prop_label">Etykieta (pusta = jednostka)</string>
+    <string name="prop_min">Min</string>
+    <string name="prop_max">Max</string>
+    <string name="prop_redline">Czerwone pole od (puste = brak)</string>
+    <string name="prop_major_ticks">Główne kreski</string>
+    <string name="prop_minor_ticks">Pośrednie kreski</string>
+    <string name="prop_start_angle">Kąt startu</string>
+    <string name="prop_sweep">Zakres kąta</string>
+    <string name="prop_show_digital">Pokaż liczbę</string>
+    <string name="prop_orientation">Orientacja</string>
+    <string name="prop_decimals">Miejsca po przecinku</string>
+    <string name="prop_segments">Diody</string>
+    <string name="prop_gear_style">Styl biegów</string>
+    <string name="prop_units">Jednostki</string>
+    <string name="prop_face">Tarcza</string>
+    <string name="prop_needle">Wskazówka</string>
+    <string name="prop_ring">Obwódka</string>
+    <string name="prop_color">Kolor</string>
+</resources>

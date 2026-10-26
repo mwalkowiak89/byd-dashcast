@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "name": "Sport Tach",
+  "canvas": { "width": 1920, "height": 720 },
+  "theme": { "background": "#0B0B0D", "foreground": "#F2F2F2", "accent": "#FFD100",
+             "warning": "#E10600", "font": "condensed" },
+  "widgets": [
+    { "id": "w1", "type": "DIAL", "signal": "SPEED", "x": 660, "y": 40, "w": 600, "h": 640,
+      "style": { "min": 0, "max": 240, "majorTicks": 12, "minorTicks": 4, "redlineFrom": 200,
+                 "startAngle": 225, "sweep": 270, "face": "#FFD100", "needle": "#E10600",
+                 "ring": "#1C1C1E", "showDigital": true, "label": "km/h" } },
+    { "id": "w2", "type": "DIGITAL", "signal": "BATTERY_SOC", "x": 120, "y": 160, "w": 400, "h": 200,
+      "style": { "label": "SOC %" } },
+    { "id": "w3", "type": "DIGITAL", "signal": "EV_RANGE", "x": 1400, "y": 160, "w": 400, "h": 200,
+      "style": { "label": "km", "min": 0, "max": 511 } },
+    { "id": "w4", "type": "GEAR", "signal": "GEAR", "x": 120, "y": 440, "w": 400, "h": 140,
+      "style": { "gearStyle": "row", "color": "#FFD100" } },
+    { "id": "w5", "type": "DIGITAL", "signal": "DRIVE_MODE", "x": 1400, "y": 440, "w": 400, "h": 140,
+      "style": { "color": "#FFD100" } }
+  ]
+}
