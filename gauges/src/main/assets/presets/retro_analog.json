@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "name": "Retro Analog",
+  "canvas": { "width": 1920, "height": 720 },
+  "theme": { "background": "#1A120B", "foreground": "#F3E9D2", "accent": "#C9A15A",
+             "warning": "#B3261E", "font": "serif" },
+  "widgets": [
+    { "id": "w1", "type": "DIAL", "signal": "BATTERY_SOC", "x": 120, "y": 160, "w": 400, "h": 400,
+      "style": { "min": 0, "max": 100, "majorTicks": 4, "minorTicks": 1, "startAngle": 210, "sweep": 240,
+                 "face": "#F3E9D2", "needle": "#B3261E", "ring": "#D9DCE1", "showDigital": false, "label": "SOC %" } },
+    { "id": "w2", "type": "DIAL", "signal": "SPEED", "x": 660, "y": 40, "w": 600, "h": 640,
+      "style": { "min": 0, "max": 220, "majorTicks": 11, "minorTicks": 1, "startAngle": 225, "sweep": 270,
+                 "face": "#F3E9D2", "needle": "#B3261E", "ring": "#D9DCE1", "showDigital": true, "label": "km/h",
+                 "color": "#3A2A1A" } },
+    { "id": "w3", "type": "DIAL", "signal": "EV_RANGE", "x": 1400, "y": 160, "w": 400, "h": 400,
+      "style": { "min": 0, "max": 500, "majorTicks": 5, "minorTicks": 1, "startAngle": 210, "sweep": 240,
+                 "face": "#F3E9D2", "needle": "#B3261E", "ring": "#D9DCE1", "showDigital": false, "label": "km" } }
+  ]
+}

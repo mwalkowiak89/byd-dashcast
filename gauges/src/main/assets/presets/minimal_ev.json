@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "name": "Minimal EV",
+  "canvas": { "width": 1920, "height": 720 },
+  "theme": { "background": "#0E1116", "foreground": "#E8EDF2", "accent": "#34C3FF",
+             "warning": "#FF4D4D", "font": "sans" },
+  "widgets": [
+    { "id": "w1", "type": "DIGITAL", "signal": "SPEED", "x": 660, "y": 120, "w": 600, "h": 360,
+      "style": { "label": "km/h" } },
+    { "id": "w2", "type": "BAR", "signal": "ACCEL_PEDAL", "x": 560, "y": 520, "w": 800, "h": 80,
+      "style": { "min": 0, "max": 100, "showDigital": false, "label": "POWER", "redlineFrom": 90 } },
+    { "id": "w3", "type": "ARC", "signal": "BATTERY_SOC", "x": 100, "y": 180, "w": 360, "h": 360,
+      "style": { "min": 0, "max": 100, "startAngle": 225, "sweep": 270, "label": "SOC %" } },
+    { "id": "w4", "type": "GEAR", "signal": "GEAR", "x": 1480, "y": 280, "w": 320, "h": 120,
+      "style": { "gearStyle": "row" } },
+    { "id": "w5", "type": "DIGITAL", "signal": "EV_RANGE", "x": 1480, "y": 440, "w": 320, "h": 120,
+      "style": { "label": "km", "min": 0, "max": 511 } },
+    { "id": "w6", "type": "CLOCK", "signal": "TIME", "x": 1560, "y": 48, "w": 240, "h": 88,
+      "style": {} }
+  ]
+}

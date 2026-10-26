@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "name": "Racing",
+  "canvas": { "width": 1920, "height": 720 },
+  "theme": { "background": "#000000", "foreground": "#FFFFFF", "accent": "#FFD100",
+             "warning": "#FF1E1E", "font": "mono" },
+  "widgets": [
+    { "id": "w1", "type": "SHIFT_LIGHTS", "signal": "ACCEL_PEDAL", "x": 160, "y": 24, "w": 1600, "h": 72,
+      "style": { "min": 0, "max": 100, "segments": 15 } },
+    { "id": "w2", "type": "GEAR", "signal": "GEAR", "x": 760, "y": 140, "w": 400, "h": 440,
+      "style": { "gearStyle": "single", "color": "#FFD100" } },
+    { "id": "w3", "type": "DIGITAL", "signal": "SPEED", "x": 1240, "y": 200, "w": 520, "h": 280,
+      "style": { "label": "km/h" } },
+    { "id": "w4", "type": "BAR", "signal": "ACCEL_PEDAL", "x": 220, "y": 152, "w": 140, "h": 520,
+      "style": { "min": 0, "max": 100, "orientation": "vertical", "showDigital": false, "label": "THR",
+                 "color": "#22D15A" } },
+    { "id": "w5", "type": "BAR", "signal": "BRAKE_PEDAL", "x": 420, "y": 152, "w": 140, "h": 520,
+      "style": { "min": 0, "max": 100, "orientation": "vertical", "showDigital": false, "label": "BRK",
+                 "color": "#E10600" } },
+    { "id": "w6", "type": "DIGITAL", "signal": "BATTERY_SOC", "x": 1240, "y": 520, "w": 520, "h": 150,
+      "style": { "label": "SOC %" } }
+  ]
+}
